@@ -131,7 +131,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Sumpkroc</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>2.3</drawSize>
 		  <color>(90,66,47)</color>
 		  <shaderType>CutoutComplex</shaderType>
           <shadowData>

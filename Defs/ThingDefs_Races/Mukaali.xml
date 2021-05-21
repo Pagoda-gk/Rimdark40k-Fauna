@@ -91,12 +91,20 @@
     <combatPower>260</combatPower>
     <ecoSystemWeight>2.0</ecoSystemWeight>
     <wildGroupSize>3~7</wildGroupSize>
+			    <alternateGraphicChance>0.99</alternateGraphicChance>
+    <alternateGraphics>
+		<li><color>(0,102,179)</color></li>
+		<li><color>(206,139,60)</color></li>
+		<li><color>(0,111,69)</color></li>
+    </alternateGraphics>
     <lifeStages>
       <li>
         <label>mukaali calf</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-          <color>(130,126,119)</color>
+          <texPath>HerdAnimals/Mukaali</texPath>
+
+
+		  <shaderType>CutoutComplex</shaderType>
           <drawSize>1.8</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -110,8 +118,9 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-          <color>(130,126,119)</color>
+          <texPath>HerdAnimals/Mukaali</texPath>
+		   
+		  <shaderType>CutoutComplex</shaderType>
           <drawSize>2.6</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
@@ -125,13 +134,15 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-          <color>(130,126,119)</color>
-          <drawSize>3.8</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
+        <texPath>HerdAnimals/Mukaali</texPath>
+		 
+
+		<shaderType>CutoutComplex</shaderType>
+        <drawSize>4.0</drawSize>
+        <shadowData>
+			<volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
-          </shadowData>
+        </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>

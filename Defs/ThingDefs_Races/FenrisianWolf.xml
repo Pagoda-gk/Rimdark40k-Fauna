@@ -94,13 +94,18 @@
     <label>timber wolf</label>
     <labelPlural>fenrisian wolves</labelPlural>
     <race>PGD_FenrisianWolf</race>
+	<alternateGraphicChance>0.99</alternateGraphicChance>
+    <alternateGraphics>
+		<li><color>(156,136,85)</color></li>
+		<li><color>(128,130,133)</color></li>
+		<li><color>(71,53,57)</color></li>
+    </alternateGraphics>
     <lifeStages>
       <li>
         <label>fenrisian wolf puppy</label>
         <labelPlural>fenrisian wolf puppies</labelPlural>
         <bodyGraphicData>
           <texPath>Predators/FenrisianWolf</texPath>
-		  		            <color>(156,136,85)</color>
 		  <shaderType>CutoutComplex</shaderType>
           <drawSize>1.8</drawSize>
         </bodyGraphicData>
@@ -112,7 +117,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Predators/FenrisianWolf</texPath>
-		            <color>(156,136,85)</color>
+
 		  <shaderType>CutoutComplex</shaderType>
           <drawSize>2.4</drawSize>
           <shadowData>
@@ -129,7 +134,6 @@
         <bodyGraphicData>
           <texPath>Predators/FenrisianWolf</texPath>
           <drawSize>3.2</drawSize>
-		  		            <color>(156,136,85)</color>
 		  <shaderType>CutoutComplex</shaderType>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>

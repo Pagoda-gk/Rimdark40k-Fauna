@@ -102,13 +102,11 @@
       <li>
         <label>saeneyti calf</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-          <color>(130,126,119)</color>
-          <drawSize>1.8</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
+          <texPath>HerdAnimals/Saeneyti</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+          <color>(90,66,47)</color>
+          <drawSize>3.2</drawSize>
+
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
@@ -117,13 +115,11 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-          <color>(130,126,119)</color>
-          <drawSize>2.6</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.45, 0.45)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
+          <texPath>HerdAnimals/Saeneyti</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+          <color>(90,66,47)</color>
+          <drawSize>4.6</drawSize>
+
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
@@ -132,13 +128,11 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-          <color>(130,126,119)</color>
-          <drawSize>3.8</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
+          <texPath>HerdAnimals/Saeneyti</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+          <color>(90,66,47)</color>
+          <drawSize>5.8</drawSize>
+
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
