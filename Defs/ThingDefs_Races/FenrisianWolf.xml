@@ -13,6 +13,18 @@
 	  <baseBodySize>3.</baseBodySize>
       <baseHungerRate>0.6</baseHungerRate>
       <baseHealthScale>7.2</baseHealthScale>
+	  <wildBiomes>
+				<BorealForest>0.4</BorealForest>
+				<Tundra>0.05</Tundra>
+				<ColdBog>0.05</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.005</TropicalSwamp>
+				<TemperateForest>0.05</TemperateForest>
+				<AridShrubland>0.</AridShrubland>
+			    <Desert>0.0</Desert>
+                <TropicalRainforest>0.05</TropicalRainforest>
+
+			</wildBiomes>
     </race>
 	<statBases>
       <MoveSpeed>6.2</MoveSpeed>

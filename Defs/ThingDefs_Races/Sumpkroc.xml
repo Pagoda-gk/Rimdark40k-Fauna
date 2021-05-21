@@ -70,6 +70,18 @@
       <trainability>Simple</trainability>
       <petness>0.15</petness>
       <lifeExpectancy>30</lifeExpectancy>
+	  <wildBiomes>
+				<BorealForest>0.4</BorealForest>
+				<Tundra>0.05</Tundra>
+				<ColdBog>0.05</ColdBog>
+				<TemperateSwamp>0.4</TemperateSwamp>
+				<TropicalSwamp>0.3</TropicalSwamp>
+				<TemperateForest>0.4</TemperateForest>
+				<AridShrubland>0.2</AridShrubland>
+			    <Desert>0.1</Desert>
+                <TropicalRainforest>0.2</TropicalRainforest>
+
+			</wildBiomes>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>

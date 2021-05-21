@@ -51,6 +51,18 @@
       <wildness>0.95</wildness>
       <lifeExpectancy>10</lifeExpectancy>
 	  <thinkTreeMain>XothicBloodLocustThinkTree</thinkTreeMain>
+	  <wildBiomes>
+				<BorealForest>0.4</BorealForest>
+				<Tundra>0.1</Tundra>
+				<ColdBog>0.1</ColdBog>
+				<TemperateSwamp>0.3</TemperateSwamp>
+				<TropicalSwamp>0.4</TropicalSwamp>
+				<TemperateForest>0.4</TemperateForest>
+				<AridShrubland>0.2</AridShrubland>
+			    <Desert>0.1</Desert>
+                <TropicalRainforest>0.6</TropicalRainforest>
+
+			</wildBiomes>
       <lifeStageAges>
           <li>
           <def>EusocialInsectAdult</def>

@@ -77,6 +77,18 @@
 	  <manhunterOnTameFailChance>.95</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
 	  <herdAnimal>true</herdAnimal>
+	  <wildBiomes>
+				<BorealForest>0.1</BorealForest>
+				<Tundra>0.0</Tundra>
+				<ColdBog>0.01</ColdBog>
+				<TemperateSwamp>0.4</TemperateSwamp>
+				<TropicalSwamp>0.1</TropicalSwamp>
+				<TemperateForest>0.2</TemperateForest>
+				<AridShrubland>0.2</AridShrubland>
+			    <Desert>0.3</Desert>
+                <TropicalRainforest>0.2</TropicalRainforest>
+
+			</wildBiomes>
 	  <lifeStageAges>
         <li>
           <def>EusocialInsectLarva</def>

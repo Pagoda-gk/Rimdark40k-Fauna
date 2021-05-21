@@ -64,6 +64,18 @@
       <packAnimal>true</packAnimal>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
+	  <wildBiomes>
+				<BorealForest>0.4</BorealForest>
+				<Tundra>0.4</Tundra>
+				<ColdBog>0.3</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.05</TropicalSwamp>
+				<TemperateForest>0.1</TemperateForest>
+				<AridShrubland>0.</AridShrubland>
+			    <Desert>0.</Desert>
+                <TropicalRainforest>0.</TropicalRainforest>
+
+			</wildBiomes>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>

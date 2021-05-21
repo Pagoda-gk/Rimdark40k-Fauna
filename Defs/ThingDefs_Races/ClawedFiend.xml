@@ -12,6 +12,18 @@
       <meatLabel>bear meat</meatLabel>
 		<foodType>CarnivoreAnimalStrict</foodType>
 		<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+		<wildBiomes>
+				<BorealForest>0.4</BorealForest>
+				<Tundra>0.5</Tundra>
+				<ColdBog>0.2</ColdBog>
+				<TemperateSwamp>0.0</TemperateSwamp>
+				<TropicalSwamp>0.0</TropicalSwamp>
+				<TemperateForest>0.1</TemperateForest>
+				<AridShrubland>0.2</AridShrubland>
+			    <Desert>0.05</Desert>
+                <TropicalRainforest>0.2</TropicalRainforest>
+
+			</wildBiomes>
 	</race>
 	    <tools>
       <li>
