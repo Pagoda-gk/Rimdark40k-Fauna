@@ -118,7 +118,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Sumpkroc</texPath>
+          <texPath>Pests/Sumpkroc</texPath>
           <drawSize>1.7</drawSize>
 		  <color>(90,66,47)</color>
 		  <shaderType>CutoutComplex</shaderType>
@@ -130,7 +130,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Sumpkroc</texPath>
+          <texPath>Pests/Sumpkroc</texPath>
           <drawSize>2</drawSize>
 		  <color>(90,66,47)</color>
 		  <shaderType>CutoutComplex</shaderType>
@@ -142,7 +142,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Sumpkroc</texPath>
+          <texPath>Pests/Sumpkroc</texPath>
           <drawSize>2.3</drawSize>
 		  <color>(90,66,47)</color>
 		  <shaderType>CutoutComplex</shaderType>

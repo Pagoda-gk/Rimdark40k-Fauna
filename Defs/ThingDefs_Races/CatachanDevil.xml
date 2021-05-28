@@ -75,6 +75,7 @@
       <body>MillipedeWithClaws</body>
       <baseHungerRate>0.20</baseHungerRate>
 	  <baseBodySize>4</baseBodySize>
+	  <predator>true</predator>
       <baseHealthScale>4.5</baseHealthScale>
 	  <foodType>CarnivoreAnimalStrict</foodType>
       <gestationPeriodDays>12</gestationPeriodDays>
