@@ -123,7 +123,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
-          <drawSize>1.05</drawSize>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -139,7 +139,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -154,7 +154,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
-          <drawSize>1.95</drawSize>
+          <drawSize>3.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

@@ -106,7 +106,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+          <texPath>Dessicated/ClawedFiend</texPath>
           <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -122,7 +122,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+          <texPath>Dessicated/ClawedFiend</texPath>
           <drawSize>2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -138,7 +138,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+          <texPath>Dessicated/ClawedFiend</texPath>
           <drawSize>2.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>

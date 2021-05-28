@@ -142,8 +142,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Dessicated/CatachanDevil</texPath>
+          <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -158,8 +158,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
-          <drawSize>2.6</drawSize>
+          <texPath>Dessicated/CatachanDevil</texPath>
+          <drawSize>4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -174,8 +174,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
-          <drawSize>3.5</drawSize>
+          <texPath>Dessicated/CatachanDevil</texPath>
+          <drawSize>5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

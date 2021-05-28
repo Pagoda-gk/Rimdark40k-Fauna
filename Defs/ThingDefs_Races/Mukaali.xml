@@ -124,7 +124,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
+          <texPath>Dessicated/Mukaali</texPath>
           <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -140,7 +140,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
+          <texPath>Dessicated/Mukaali</texPath>
           <drawSize>2.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -157,8 +157,8 @@
         </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
-          <drawSize>3.8</drawSize>
+          <texPath>Dessicated/Mukaali</texPath>
+          <drawSize>4</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>
           <bodyPartGroup>TuskAttackTool</bodyPartGroup>

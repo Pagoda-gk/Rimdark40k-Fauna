@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="LeatherBase">
+		<defName>PGD_Leather_Salamander</defName>
+		<label>salamander leather</label>
+			<graphicData>
+			<color>(244,121,32)</color>
+		</graphicData>
+		<statBases>
+		    <StuffPower_Armor_Heat>5</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Heat>75</StuffPower_Insulation_Heat>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffProps>
+			<color>(244,121,32)</color>
+			<commonality>0.05</commonality>
+		</stuffProps>
+	</ThingDef>
+  
+  </Defs>
