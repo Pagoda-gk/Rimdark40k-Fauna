@@ -47,6 +47,16 @@
         <shearIntervalDays>25</shearIntervalDays>
         <woolAmount>100</woolAmount>
       </li>
+        <li Class = "PGD_40kFauna.CompProperties_Charger">
+          <RangeMax>20</RangeMax>
+          <RangeMin>7</RangeMin>
+          <explodingRadius>3</explodingRadius>
+          <ticksBetweenChargeChance>600</ticksBetweenChargeChance>
+          <Chance>0.75</Chance>
+          <textMotes>false</textMotes>
+          <targetPawns>true</targetPawns>
+          <targetBuildings>false</targetBuildings>
+        </li>
     </comps>
     <race>
       <herdAnimal>true</herdAnimal>
@@ -158,5 +168,22 @@
       </li>
     </lifeStages>
   </PawnKindDef>
+  
+  <!-- def for the animals charge-->
+  <ThingDef ParentName="BaseBullet">
+       <defName>BETA_DestroyerClassCharge</defName>
+       <thingClass>PGD_40kFauna.ChargingThing</thingClass>
+       <label>charge</label>
+       <graphicData>
+            <texPath>DummyTexture</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+       <projectile>
+            <flyOverhead>true</flyOverhead>
+            <damageDef>Stun</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <speed>125</speed>
+       </projectile>
+    </ThingDef>
   
   </Defs>

@@ -1,5 +1,164 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ThingDef ParentName="BigBirdThingBase">
+    <defName>PGD_Razorwing</defName>
+    <label>razorwing</label>
+    <description>A large flightless bird with brightly-colored feathers. While it looks beautiful, its kick is vicious. It's known for being quick to aggression when harmed by violence or confronted by incompetent animal tamers.</description>
+    <statBases>
+      <MoveSpeed>6.2</MoveSpeed>
+      <MarketValue>200</MarketValue>
+      <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+    </statBases>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHealthScale>0.8</baseHealthScale>
+      <baseHungerRate>0.15</baseHungerRate>
+      <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
+      <wildness>0.80</wildness>
+      <lifeExpectancy>25</lifeExpectancy>
+      <meatLabel>bird meat</meatLabel>
+      <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+	  	  <wildBiomes>
+				<BorealForest>0.1</BorealForest>
+				<Tundra>0.01</Tundra>
+				<ColdBog>0.1</ColdBog>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalSwamp>0.3</TropicalSwamp>
+				<TemperateForest>0.3</TemperateForest>
+				<AridShrubland>0.2</AridShrubland>
+			    <Desert>0.2</Desert>
+                <TropicalRainforest>0.5</TropicalRainforest>
 
+			</wildBiomes>
+    </race>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggCassowaryFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>17</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigBirdKindBase">
+    <defName>PGD_Razorwing</defName>
+    <label>razorwing</label>
+    <race>PGD_Razorwing</race>
+    <combatPower>60</combatPower>
+			<wildGroupSize>
+			<min>6</min>
+			<max>10</max>
+		</wildGroupSize>
+	<alternateGraphicChance>0.99</alternateGraphicChance>
+    <alternateGraphics>
+		<li><color>(0,129,148)</color></li>
+		<li><color>(0,37,97)</color></li>
+		<li><color>(0,96,99)</color></li>
+		<li><color>(26,33,61)</color></li>
+		<li><color>(74,76,88)</color></li>
+    </alternateGraphics>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pests/Razorwing</texPath>
+          <drawSize>1.1</drawSize>
+		  <shaderType>CutoutComplex</shaderType>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cassowary/Dessicated_Cassowary</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pests/Razorwing</texPath>
+          <drawSize>1.4</drawSize>
+
+		  <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cassowary/Dessicated_Cassowary</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pests/Razorwing</texPath>
+          <drawSize>1.8</drawSize>
+
+		  <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cassowary/Dessicated_Cassowary</texPath>
+          <drawSize>1.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
 </Defs>

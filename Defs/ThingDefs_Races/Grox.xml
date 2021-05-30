@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< Updated upstream
-=======
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_Grox</defName>
     <label>grox</label>
@@ -132,7 +130,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>2.75</drawSize>
+          <drawSize>1.25</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -148,11 +146,10 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>3.5</drawSize>
+          <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
->>>>>>> Stashed changes
 
 </Defs>

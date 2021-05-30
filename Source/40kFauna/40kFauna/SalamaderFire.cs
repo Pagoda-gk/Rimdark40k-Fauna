@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 using RimWorld;
 using UnityEngine;
 using Verse;
+
 namespace PGD_40kFauna
 {
+
     public class CompPropererties_FireStarter : CompProperties
     {
         public CompPropererties_FireStarter()
@@ -15,99 +17,98 @@ namespace PGD_40kFauna
             this.compClass = typeof(CompFireStarter);
         }
         public float SpreadInterval = 6000f;
-
-
+        
+       
 
     }
 
     public class CompFireStarter : ThingComp
     {
-        public CompPropererties_FireStarter Props => this.props as CompPropererties_FireStarter;
-        public Pawn pawn => this.parent as Pawn;
-        public override void CompTick()
-        {
-            base.CompTick();
+            public CompPropererties_FireStarter Props => this.props as CompPropererties_FireStarter;
+            public override void CompTick()
             {
-
-
-                //this.ticksUntilSmoke--;
-                //if (this.ticksUntilSmoke <= 0)
-                //{
-                //    this.SpawnSmokeParticles();
-                //}
-
-                if (pawn != null)
+                base.CompTick();
                 {
-                    float fireSize = pawn.BodySize;
-                    this.ticksSinceSpread++;
-                    if (/*fireSize > 0.7f && */Rand.Value < fireSize * 0.01f)
+
+
+                    //this.ticksUntilSmoke--;
+                    //if (this.ticksUntilSmoke <= 0)
+                    //{
+                    //    this.SpawnSmokeParticles();
+                    //}
+
+                    if (this.parent is Pawn pawn)
                     {
-                        MoteMaker.ThrowMicroSparks(this.pawn.DrawPos, this.pawn.Map);
+                        float fireSize = pawn.bodySize;
+                        if (/*fireSize > 0.7f && */Rand.Value < fireSize * 0.01f)
+                        {
+                            MoteMaker.ThrowMicroSparks(this.DrawPos, base.Map);
+                            this.ticksSinceSpread++;
+                            if ((float)this.ticksSinceSpread >= this.Props.SpreadInterval)
+                            {
+                                this.TrySpread();
+                                this.ticksSinceSpread = 0;
+                            }
+                        }
+                    }
+                    if (this.fireSize > 1f)
+                    {
+                        this.ticksSinceSpread++;
                         if ((float)this.ticksSinceSpread >= this.Props.SpreadInterval)
                         {
                             this.TrySpread();
                             this.ticksSinceSpread = 0;
                         }
                     }
+                    if (this.IsHashIntervalTick(150))
+                    {
+                        this.DoComplexCalcs();
+                    }
+                    if (this.ticksSinceSpawn >= 7500)
+                    {
+                        this.TryBurnFloor();
+                    }
                 }
-                /*
-    if (this.IsHashIntervalTick(150))
-    {
-        this.DoComplexCalcs();
-    }
-    if (this.ticksSinceSpawn >= 7500)
-    {
-        this.TryBurnFloor();
-    }
-    */
+
             }
 
-        }
 
-
+    }
         protected void TrySpread()
         {
-            IntVec3 intVec = pawn.Position;
+            IntVec3 intVec = base.Position;
             bool flag;
             if (Rand.Chance(0.8f))
             {
-                intVec = pawn.Position + GenRadial.ManualRadialPattern[Rand.RangeInclusive(1, 8)];
+                intVec = base.Position + GenRadial.ManualRadialPattern[Rand.RangeInclusive(1, 8)];
                 flag = true;
             }
             else
             {
-                intVec = pawn.Position + GenRadial.ManualRadialPattern[Rand.RangeInclusive(10, 20)];
+                intVec = base.Position + GenRadial.ManualRadialPattern[Rand.RangeInclusive(10, 20)];
                 flag = false;
             }
-            if (!intVec.InBounds(pawn.Map))
+            if (!intVec.InBounds(base.Map))
             {
                 return;
             }
-            if (Rand.Chance(FireUtility.ChanceToStartFireIn(intVec, pawn.Map)))
+            if (Rand.Chance(FireUtility.ChanceToStartFireIn(intVec, base.Map)))
             {
                 if (!flag)
                 {
-                    CellRect startRect = CellRect.SingleCell(pawn.Position);
+                    CellRect startRect = CellRect.SingleCell(base.Position);
                     CellRect endRect = CellRect.SingleCell(intVec);
-                    if (!GenSight.LineOfSight(pawn.Position, intVec, pawn.Map, startRect, endRect, null))
+                    if (!GenSight.LineOfSight(base.Position, intVec, base.Map, startRect, endRect, null))
                     {
                         return;
                     }
-                                       ((Spark)GenSpawn.Spawn(ThingDefOf.Spark, pawn.Position, pawn.Map, WipeMode.Vanish)).Launch(pawn, intVec, intVec, ProjectileHitFlags.All, null);
+                    ((Spark)GenSpawn.Spawn(ThingDefOf.Spark, base.Position, base.Map, WipeMode.Vanish)).Launch(this, intVec, intVec, ProjectileHitFlags.All, null);
                     return;
                 }
                 else
                 {
-                    FireUtility.TryStartFireIn(intVec, pawn.Map, 0.1f);
+                    FireUtility.TryStartFireIn(intVec, base.Map, 0.1f);
                 }
             }
         }
-
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref this.ticksSinceSpread, "ticksSinceSpread", -1);
-        }
-        private int ticksSinceSpread;
-    }
 }

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<<<<<<< Updated upstream
-=======
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_FerroBeast</defName>
     <label>ferro-beast</label>
@@ -96,7 +94,7 @@
           <drawSize>0.9</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Dessicated/Ferrobeast</texPath>
+          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
           <drawSize>0.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -106,7 +104,7 @@
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Dessicated/Ferrobeast</texPath>
+          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -120,12 +118,11 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Dessicated/Ferrobeast</texPath>
+          <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
->>>>>>> Stashed changes
 
 </Defs>
