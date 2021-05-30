@@ -2,3 +2,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40k_Fauna\Assemblies
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40k_Fauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40k_Fauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40k_Fauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Assemblies\40kFauna.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.dll

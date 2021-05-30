@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SaeneytiCharge.cs" />
     <Compile Include="HatcherHorde.cs" />
     <Compile Include="HeddiffGiverGoJuice.cs" />
     <Compile Include="Properties\40kFauna.cs" />
