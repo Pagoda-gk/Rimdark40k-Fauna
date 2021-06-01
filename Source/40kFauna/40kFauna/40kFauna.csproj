@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.0.4\lib\net472\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -53,11 +56,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GroxAttack.cs" />
     <Compile Include="SalamaderFire.cs" />
     <Compile Include="SaeneytiCharge.cs" />
     <Compile Include="HatcherHorde.cs" />
     <Compile Include="HeddiffGiverGoJuice.cs" />
     <Compile Include="Properties\40kFauna.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

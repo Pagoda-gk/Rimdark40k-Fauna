@@ -6,3 +6,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Assemblies\
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CopyComplete
