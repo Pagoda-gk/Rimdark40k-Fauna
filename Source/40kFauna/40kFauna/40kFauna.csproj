@@ -56,7 +56,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FerroDiet.cs" />
+    <Compile Include="FerroBeastFood\JobDriver_Ingest_Ferro.cs" />
+    <Compile Include="FerroBeastFood\FerroFoods.cs" />
+    <Compile Include="FerroBeastFood\JobGiver_GetFood_Ferro.cs" />
     <Compile Include="GroxAttack.cs" />
     <Compile Include="SalamaderFire.cs" />
     <Compile Include="SaeneytiCharge.cs" />
