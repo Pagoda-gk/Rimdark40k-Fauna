@@ -62,20 +62,24 @@ namespace PGD_40kFauna
 	{
 
 		[HarmonyPostfix]
-		public static void Postfix(Pawn __male, Pawn __female)
+		public static void Postfix(Pawn male, Pawn female)
 		{
+			if (male.def == PGD_40kFaunaDefOf.PGD_Grox) IsGrox(male);
+			if (female.def == PGD_40kFaunaDefOf.PGD_Grox) IsGrox(female);
 
-			if (__female.def == PGD_40kFaunaDefOf.PGD_Grox && Rand.Chance(0.05f))
+		}
+		public static void IsGrox(Pawn pawn)
+		{
+			if (pawn != null && Rand.Chance(0.05f))
 			{
 
 				string MessageGroxAttack = "{0} has become enraged and is making a territorial display.";
 
-				String.Format(MessageGroxAttack, __female.Name);
+				String.Format(MessageGroxAttack, pawn.Name);
 
-				__female.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("Manhunter"), null, false, false, null, false);
+				pawn.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("Manhunter"), null, false, false, null, false);
 
 			}
-
 		}
 	}
 

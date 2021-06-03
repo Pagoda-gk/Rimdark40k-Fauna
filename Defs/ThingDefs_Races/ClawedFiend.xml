@@ -3,7 +3,9 @@
 <ThingDef ParentName="BaseBear">
     <defName>PGD_ClawedFiend</defName>
     <label>clawed fiend</label>
-    <description>The Clawed Fiend is an alien beast whose body is an amalgamation of the most predatory aspects of nature. Its size is tremendous and it can move that bulk of muscle and claw at almost preternatural speeds.</description>
+    <description>The Clawed Fiend is an alien beast whose body is an amalgamation of the most predatory aspects of nature. Its size is tremendous and it can move that bulk of muscle and claw at almost preternatural speeds./n/n
+If a Clawed Fiend is wounded it enters an even more furious state.Some studies of recovered corpses suggest that the creature is actually angered by the scent of its own blood, which contains a series of pheromones that enrage the creature and boosts its already considerate strength./n/n
+These pheromones are also excreted through the creatures pores as sweat, and when collected can be utilised as a substance many would recognise as go-juice.</description>
     <race>
 	<hediffGiverSets>
 	<li>PGD_ClawedFiendWound</li>

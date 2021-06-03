@@ -3,7 +3,9 @@
 <ThingDef ParentName="BaseInsect">
     <defName>PGD_XothicBloodLocustS</defName>
     <label>xothic blood locust (solitaria)</label>
-    <description>The Xothic Blood Locust is the subject of horror stories on agri–worlds throughout the Calixis Sector. This creature arrives in great swarms and feeds on the bodily fluids of anything unlucky enough to be caught by it. On agri-worlds, large swarms have been known to decimate crops and cause massive famines. On planets with larger human populations, whole communities can be wiped out in a matter of hours. Worse, the creatures are known to lay eggs in grain and produce shipments, ready to hatch when they reach the next planet.</description>
+    <description>The xothic blood locust is a horror story on most agri worlds. It’s hunger is insatiable even in the most nutrient- rich environments, and it’s reproduction cycle is uncontrollably fast./n/n
+While it’s small, golden brown solitaria form is dangerous in swarms, it is mostly content to drain the fluids from plants and smaller animals. However the species undergoes a chemical transformation when a colony gets too large, and the larger gregaria form emerges./n/n
+The gregaria will consume it’s smaller cousins and then quickly strip the land of life forms, unwilling to stop even when faced with armed humanoids, or the largest of predators. Growth hormones spike and the locusts will breed even more quickly.</description>
 
 	  <statBases>
       <MoveSpeed>5.75</MoveSpeed>
@@ -37,7 +39,7 @@
       </li>
     </comps>
     <race>
-	<foodType>OmnivoreAnimal, AnimalProduct, Plant</foodType>
+		<foodType>OmnivoreAnimal, AnimalProduct, Plant</foodType>
       <body>BeetleLike</body>
       <baseBodySize>0.2</baseBodySize>
       <baseHungerRate>3.0</baseHungerRate>

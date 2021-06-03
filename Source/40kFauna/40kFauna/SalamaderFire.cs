@@ -42,7 +42,7 @@ namespace PGD_40kFauna
                 if (pawn != null)
                 {
                     float fireSize = pawn.BodySize;
-                    if (/*fireSize > 0.7f && */Rand.Value < fireSize * 0.01f)
+                    if (/*fireSize > 0.7f && */Rand.Value < fireSize * 0.1)
                     {
                         MoteMaker.ThrowMicroSparks(this.pawn.DrawPos, this.pawn.Map);
                         this.ticksSinceSpread++;

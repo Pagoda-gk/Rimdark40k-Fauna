@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseInsect">
     <defName>PGD_Ambull</defName>
     <label>ambull</label>
-    <description>An ambull is a massively built, roughly humanoid xenos creature with an insect-like armoured carapace and oversized arms tipped with iron-hard claws. Their pronounced hunched stance lowers their true height greatly, but when fully upright with claws stretched overhead they can easily reach four metres in height.</description>
+    <description>An Ambull is a massively built, roughly humanoid xenos creature with an insect-like armoured carapace and oversized arms tipped with iron-hard claws. They are extremely hardy and long-lived social creatures, usually forming close-knit family units with several adults tending to broods of four to seven offspring. They are also natural tunnelers, with eyes sensitive to the faintest light even into the infrared spectrum, and claws that can excavate through soft rock and earth at alarming speeds.</description>
     <statBases>
       <MoveSpeed>3.60</MoveSpeed>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>

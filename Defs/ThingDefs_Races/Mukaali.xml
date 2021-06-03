@@ -3,7 +3,11 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_Mukaali</defName>
     <label>mukaali</label>
-    <description>The Mukaali are a species of non-sentient xenos animals utilised by the Tallarn Desert Raiders Astra Militarum regiments' specialised Rough Rider squadrons as mounts and beasts of burden. This animal is a creature perfectly adapted to a life of stifling heat and shifting sands. Tall and long-necked, a Mukaali have wide padded feet that help them move across soft sand drifts and other perilous desert terrain.</description>
+    <description>The Mukaali originated in the vast equatorial deserts of the Imperial world of Goru-Prime, but have since been imported to other Imperial Desert Worlds such as Tallarn. These mounts are ideally suited to combat operations in arid environments./n/n
+The Mukaali is a creature perfectly adapted to a life of stifling heat and shifting sands. Tall and long-necked, a Mukaali have wide padded feet that help them move across soft sand drifts and other perilous desert terrain./n/n
+Mukaali tend to be passive creatures and extremely slow to anger, making them a good herd and caravan animal./n/n
+Mukaali are particularly useful as mounts because of their sheer stamina, which allows them to cross vast swaths of inhospitable environments without rest. These hardy beasts can go for long periods of time without food or water. This makes them an attractive proposition for long campaigns where re-supply is difficult./n/n
+In fact, Mukaali are usually much more resilient than their riders, and so their ability to endure is rarely put to anything resembling a true test. Those Tallarn Rough Rider regiments that employ Mukaali use the beasts to strategically outmanoeuvre their foes, using the tireless creatures to ride for days so that they can strike from angles unexpected.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>600</MarketValue>

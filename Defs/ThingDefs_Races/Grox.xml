@@ -4,7 +4,10 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_Grox</defName>
     <label>grox</label>
-    <description>These large lizards normally feed on plant matter. However, when angered, their tough hide and sharp claws make them quite dangerous.\n\nResting iguanas hold their heads high, giving them an amusing 'proud' look. But they're not proud; they're just trying to see predators so they don't get eaten.</description>
+    <description>The Grox has many useful traits, such as the ability to survive in almost any planetary environment and the omnivorous ability to thrive on even the most indigestible food./n/n
+Grox meat itself is also extremely palatable and nutritious, and nearly every single part of the beast is edible. Because of their value as livestock they have since been introduced to other worlds throughout the entire galaxy, so that the Grox is now the most common type of livestock animal throughout the Imperium./n/n
+The only drawback to the Grox is their aggressive and vicious temperament. They do not enjoy interacting with others, even of their own species, and will often become enraged when forced to./n/n
+They are territorial and like their privacy, so attempting to herd Grox together would easily drive them into a rage.</description>
     <statBases>
       <MoveSpeed>4.1</MoveSpeed>
       <MarketValue>100</MarketValue>

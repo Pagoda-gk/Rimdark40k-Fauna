@@ -4,12 +4,13 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_FerroBeast</defName>
     <label>ferro-beast</label>
-    <description>This heavily armored land-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.</description>
+    <description>This heavily armored land-dwelling reptile is known for its slow moving speed and surprisingly vicious bite. Because of its natural armor, it is tough to kill and can do serious damage during drawn-out melee fights.Ferro-beasts are fauna native to the mineral-poor planet of Yimbo-bim. To live in their harsh conditions, where there is little and insufficient iron quantity in the environment, ferro-beasts have evolved a specialised feeding mechanism to digest ferrous metals directly from mineral ore deposits. For that purpose, the mouth of these creatures are surrounded by short tentacles covered in suckers. The suckers secrete an acidic syrup that turns ferro-ore into a liquid, digestible "soup", that ferro-beasts can eat easily./n/n
+To find the metal ores, ferro-beasts have evolved a complex sensory organ to smell ores over a distance of many miles. The presence of pure, refined metals will attract these creatures from a great area around. So ferro-beasts may rampage to eat a landing spacecraft or other metal equipment of sentient species.</description>
     <statBases>
       <MoveSpeed>1.0</MoveSpeed>
       <MarketValue>200</MarketValue>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
     </statBases>
@@ -47,13 +48,14 @@
     </comps>
     <race>
       <body>TurtleLike</body>
-      <baseBodySize>0.5</baseBodySize>
-      <baseHungerRate>0.33</baseHungerRate>
-      <baseHealthScale>0.6</baseHealthScale>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHungerRate>2</baseHungerRate>
+      <baseHealthScale>2.</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.75</wildness>
       <lifeExpectancy>180</lifeExpectancy>
+	  <thinkTreeMain>PGD_FerroBeastThinkTree</thinkTreeMain>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
