@@ -49,7 +49,7 @@ To find the metal ores, ferro-beasts have evolved a complex sensory organ to sme
     <race>
       <body>TurtleLike</body>
       <baseBodySize>0.9</baseBodySize>
-      <baseHungerRate>2</baseHungerRate>
+      <baseHungerRate>0.2</baseHungerRate>
       <baseHealthScale>2.</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
