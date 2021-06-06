@@ -21,6 +21,7 @@ namespace PGD_40kFauna
 			DefOfHelper.EnsureInitializedInCtor(typeof(PGD_40kFaunaDefOf));
 		}
 		public static ThingDef PGD_Grox;
+		public static ThingDef PGD_Khymera;
 		public static HediffDef PGD_DjemjaFalak;
 
 	}

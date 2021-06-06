@@ -9,23 +9,23 @@ The creature is an incredibly fast flyer which they use for an initial attack di
 The claws and beak of the Razorwing are strong enough to cleave through the mass of its prey to get to the bones inside. The beasts are known to especially delight in crushing and eating the bones of their victims as well as the flesh. It is believed that it uses this calcium to strengthen and sharpen it’s feathers into tough and incredibly sharp tissue, like oceanic coral./n/n
 This means the entirety of the Razorwing is a weapon, with such speed in its dive that it is akin to firing a bullet at its target, allowing the creature to slice or, in some cases, tear completely through a victim's body.</description>
     <statBases>
-      <MoveSpeed>6.2</MoveSpeed>
-      <MarketValue>200</MarketValue>
+      <MoveSpeed>7.2</MoveSpeed>
+      <MarketValue>400</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
     </statBases>
     <race>
-      <herdAnimal>true</herdAnimal>
-      <baseBodySize>0.8</baseBodySize>
+      <baseBodySize>0.5</baseBodySize>
       <baseHealthScale>0.8</baseHealthScale>
       <baseHungerRate>0.15</baseHungerRate>
       <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
+      <herdAnimal>true</herdAnimal>
       <wildness>0.80</wildness>
-      <lifeExpectancy>25</lifeExpectancy>
+      <lifeExpectancy>13</lifeExpectancy>
       <meatLabel>bird meat</meatLabel>
       <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+      <manhunterOnDamageChance>0.80</manhunterOnDamageChance>
 	  	  <wildBiomes>
 				<BorealForest>0.1</BorealForest>
 				<Tundra>0.01</Tundra>
@@ -41,7 +41,7 @@ This means the entirety of the Razorwing is a weapon, with such speed in its div
     </race>
     <comps>
       <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggCassowaryFertilized</eggFertilizedDef>
+        <eggFertilizedDef>PGD_EggRazorwingFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>17</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -104,7 +104,7 @@ This means the entirety of the Razorwing is a weapon, with such speed in its div
     <defName>PGD_Razorwing</defName>
     <label>razorwing</label>
     <race>PGD_Razorwing</race>
-    <combatPower>60</combatPower>
+    <combatPower>80</combatPower>
 			<wildGroupSize>
 			<min>6</min>
 			<max>10</max>
@@ -163,5 +163,24 @@ This means the entirety of the Razorwing is a weapon, with such speed in its div
       </li>
     </lifeStages>
   </PawnKindDef>
+  
+    <ThingDef ParentName="EggFertBase">
+    <defName>PGD_EggRazorwingFertilized</defName>
+    <label>razorwing egg (fert.)</label>
+    <description>A fertilized razorwing egg. If all goes well, it should hatch into a baby razorwing. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(125,138,97)</color>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>19.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>7</hatcherDaystoHatch>
+        <hatcherPawn>PGD_Razorwing</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
   
 </Defs>

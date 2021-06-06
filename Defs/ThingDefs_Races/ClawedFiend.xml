@@ -6,26 +6,33 @@
     <description>The Clawed Fiend is an alien beast whose body is an amalgamation of the most predatory aspects of nature. Its size is tremendous and it can move that bulk of muscle and claw at almost preternatural speeds./n/n
 If a Clawed Fiend is wounded it enters an even more furious state.Some studies of recovered corpses suggest that the creature is actually angered by the scent of its own blood, which contains a series of pheromones that enrage the creature and boosts its already considerate strength./n/n
 These pheromones are also excreted through the creatures pores as sweat, and when collected can be utilised as a substance many would recognise as go-juice.</description>
-    <race>
-	<hediffGiverSets>
-	<li>PGD_ClawedFiendWound</li>
-	</hediffGiverSets>
-      <wildness>0.80</wildness>
-      <meatLabel>bear meat</meatLabel>
+    <statBases>
+      <MoveSpeed>4.7</MoveSpeed>
+      <MarketValue>6000</MarketValue>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+    </statBases>
+	<race>
+		<baseHealthScale>6.0</baseHealthScale>
+		<baseBodySize>3.6</baseBodySize>
+		<hediffGiverSets>
+		<li>PGD_ClawedFiendWound</li>
+		</hediffGiverSets>
+		<wildness>0.97</wildness>
 		<foodType>CarnivoreAnimalStrict</foodType>
 		<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 		<wildBiomes>
-				<BorealForest>0.4</BorealForest>
-				<Tundra>0.5</Tundra>
-				<ColdBog>0.2</ColdBog>
-				<TemperateSwamp>0.0</TemperateSwamp>
-				<TropicalSwamp>0.0</TropicalSwamp>
-				<TemperateForest>0.1</TemperateForest>
-				<AridShrubland>0.2</AridShrubland>
-			    <Desert>0.05</Desert>
-                <TropicalRainforest>0.2</TropicalRainforest>
-
-			</wildBiomes>
+			<BorealForest>0.4</BorealForest>
+			<Tundra>0.5</Tundra>
+			<ColdBog>0.2</ColdBog>
+			<TemperateSwamp>0.0</TemperateSwamp>
+			<TropicalSwamp>0.0</TropicalSwamp>
+			<TemperateForest>0.1</TemperateForest>
+			<AridShrubland>0.2</AridShrubland>
+			<Desert>0.05</Desert>
+            <TropicalRainforest>0.2</TropicalRainforest>
+		</wildBiomes>
 	</race>
 	    <tools>
       <li>
@@ -95,6 +102,7 @@ These pheromones are also excreted through the creatures pores as sweat, and whe
     <defName>PGD_ClawedFiend</defName>
     <label>clawed fiend</label>
     <race>PGD_ClawedFiend</race>
+	<combatPower>800</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>

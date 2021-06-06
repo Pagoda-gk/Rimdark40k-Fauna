@@ -8,7 +8,7 @@
 They also display the ability to cause fire, their bodies rippling with sparks and embers that will occasionally accidentally hit combustible materials. Their volatile skin also causes fires when they maul or bite another creature, making them highly risky to get into a confrontation with.</description>
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
-      <MarketValue>100</MarketValue>
+      <MarketValue>350</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>200</ComfyTemperatureMax>
 	  <ArmorRating_Heat>1.0</ArmorRating_Heat>
@@ -21,6 +21,13 @@ They also display the ability to cause fire, their bodies rippling with sparks a
         </capacities>
         <power>8</power>
         <cooldownTime>2</cooldownTime>
+		        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.7</chance>
+          </li>
+        </extraMeleeDamages>
         <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
       </li>
       <li>
@@ -30,6 +37,13 @@ They also display the ability to cause fire, their bodies rippling with sparks a
         </capacities>
         <power>8</power>
         <cooldownTime>2</cooldownTime>
+		        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.7</chance>
+          </li>
+        </extraMeleeDamages>
         <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
       </li>
       <li>
@@ -38,6 +52,13 @@ They also display the ability to cause fire, their bodies rippling with sparks a
         </capacities>
         <power>10</power>
         <cooldownTime>2.6</cooldownTime>
+		        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.7</chance>
+          </li>
+        </extraMeleeDamages>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
       </li>
@@ -48,6 +69,13 @@ They also display the ability to cause fire, their bodies rippling with sparks a
         </capacities>
         <power>5</power>
         <cooldownTime>2</cooldownTime>
+		        <extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>10</amount>
+            <chance>0.7</chance>
+          </li>
+        </extraMeleeDamages>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
@@ -55,27 +83,44 @@ They also display the ability to cause fire, their bodies rippling with sparks a
     </tools>
     <comps>
       <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggIguanaFertilized</eggFertilizedDef>
+        <eggFertilizedDef>PGD_EggSalamanderFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>1~2</eggCountRange>
       </li>
 	  <li Class="PGD_40kFauna.CompPropererties_FireStarter">
-	  <SpreadInterval>800</SpreadInterval>
+	  <SpreadInterval>600</SpreadInterval>
 	  </li>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Chemfuel</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>12</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
     </comps>
     <race>
       <body>QuadrupedAnimalWithClawsTailAndJowl</body>
-      <baseBodySize>0.20</baseBodySize>
-      <baseHealthScale>0.5</baseHealthScale>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
       <baseHungerRate>0.28</baseHungerRate>
       <foodType>OmnivoreRoughAnimal</foodType>
-      <leatherDef>Leather_Lizard</leatherDef>
+      <leatherDef>PGD_Leather_Salamander</leatherDef>
       <wildness>0.5</wildness>
-      <trainability>None</trainability>
+      <trainability>Simple</trainability>
       <petness>0.15</petness>
       <lifeExpectancy>12</lifeExpectancy>
+	  		<wildBiomes>
+			<BorealForest>0.01</BorealForest>
+			<Tundra>0</Tundra>
+			<ColdBog>0.05</ColdBog>
+			<TemperateSwamp>0.1</TemperateSwamp>
+			<TropicalSwamp>0.4</TropicalSwamp>
+			<TemperateForest>0.1</TemperateForest>
+			<AridShrubland>0.4</AridShrubland>
+		    <Desert>0.5</Desert>
+            <TropicalRainforest>0.1</TropicalRainforest>
+		</wildBiomes>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -107,31 +152,31 @@ They also display the ability to cause fire, their bodies rippling with sparks a
     <defName>PGD_Salamander</defName>
     <label>salamander</label>
     <race>PGD_Salamander</race>
-    <combatPower>40</combatPower>
-    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <combatPower>65</combatPower>
+    <ecoSystemWeight>0.40</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Pests/Salamander</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>2</drawSize>
 		  		  <color>(26,33,44)</color>
 		  <shaderType>CutoutComplex</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Pests/Salamander</texPath>
-          <drawSize>1.25</drawSize>
+          <drawSize>3.25</drawSize>
 		  <color>(26,33,44)</color>
 		  <shaderType>CutoutComplex</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1.25</drawSize>
+          <drawSize>3.25</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -147,10 +192,35 @@ They also display the ability to cause fire, their bodies rippling with sparks a
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
+  
+  
+  
+  
+  
+    <ThingDef ParentName="EggFertBase">
+    <defName>PGD_EggSalamanderFertilized</defName>
+    <label>salamander egg (fert.)</label>
+    <description>A fertilized salamander egg. If all goes well, it should hatch into a baby salamander. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>25.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>5.5</hatcherDaystoHatch>
+        <hatcherPawn>PGD_Salamander</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
 
 </Defs>

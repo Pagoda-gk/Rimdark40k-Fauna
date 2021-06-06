@@ -6,9 +6,11 @@
     <description>Sumpkrocs are large reptiles that have become grotesquely oversized and mutated. Extremely aggressive, they are sometimes utilized by Hive Gangs such as House Goliath. However while ferocious they are not especially intelligent, easily being distracted by its own reflection.</description>
     <statBases>
       <MoveSpeed>2.0</MoveSpeed>
-      <MarketValue>100</MarketValue>
+      <MarketValue>220</MarketValue>
       <ComfyTemperatureMin>-15</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.33</ArmorRating_Sharp>
     </statBases>
     <tools>
       <li>
@@ -33,7 +35,7 @@
         <capacities>
           <li>ToxicBite</li>
         </capacities>
-        <power>25</power>
+        <power>20</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.7</chanceFactor>
@@ -52,9 +54,9 @@
     </tools>
     <comps>
       <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>EggIguanaFertilized</eggFertilizedDef>
+        <eggFertilizedDef>PGD_EggSumpkrocFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggLayIntervalDays>25</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
         <eggCountRange>1~2</eggCountRange>
       </li>
@@ -67,7 +69,7 @@
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.01</wildness>
-      <trainability>Simple</trainability>
+      <trainability>None</trainability>
       <petness>0.15</petness>
       <lifeExpectancy>30</lifeExpectancy>
 	  <wildBiomes>
@@ -114,7 +116,7 @@
     <label>sumpkroc</label>
     <race>PGD_Sumpkroc</race>
     <combatPower>200</combatPower>
-    <ecoSystemWeight>0.80</ecoSystemWeight>
+    <ecoSystemWeight>0.45</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -125,7 +127,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -137,7 +139,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1.25</drawSize>
+          <drawSize>2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -153,10 +155,30 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
+  
+  
+  <ThingDef ParentName="EggFertBase">
+    <defName>PGD_EggSumpkrocFertilized</defName>
+    <label>sumpkroc egg (fert.)</label>
+    <description>A fertilized sumpkroc egg. If all goes well, it should hatch into a baby sumpkroc. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>25.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>PGD_Sumpkroc</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
   
   </Defs>

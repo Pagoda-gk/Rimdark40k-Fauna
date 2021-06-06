@@ -6,7 +6,7 @@
     <description>This enormous Elk type creature has been introduced to many ice worlds where it serves as a reliable mount and pack animal. It’s thick layers of fur allow it to withstand incredibly low temperatures and it’s complex antlers are able to detect heat and food sources./n/n
 The saeneyti is usually a slow moving, docile creature, however when threatened it can move at surprising speeds to charge it’s enemy. This is not something easily brushed off, as the creature can reach 20 feet at the shoulder and weigh several tonnes.</description>
     <statBases>
-      <MoveSpeed>4.8</MoveSpeed>
+      <MoveSpeed>4.2</MoveSpeed>
       <MarketValue>600</MarketValue>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
       <ComfyTemperatureMax>35</ComfyTemperatureMax>
@@ -63,12 +63,12 @@ The saeneyti is usually a slow moving, docile creature, however when threatened 
       <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithHooves</body>
       <baseHungerRate>0.3</baseHungerRate>
-      <baseBodySize>4.0</baseBodySize>
-      <baseHealthScale>3.6</baseHealthScale>
+      <baseBodySize>9.0</baseBodySize>
+      <baseHealthScale>4.6</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Elephant</leatherDef>
+      <leatherDef>Leather_Thrumbo</leatherDef>
       <gestationPeriodDays>48</gestationPeriodDays>
-      <wildness>0.20</wildness>
+      <wildness>0.15</wildness>
       <nuzzleMtbHours>24</nuzzleMtbHours>
       <trainability>Intermediate</trainability>
       <lifeExpectancy>50</lifeExpectancy>
@@ -118,7 +118,7 @@ The saeneyti is usually a slow moving, docile creature, however when threatened 
     <defName>PGD_Saeneyti</defName>
     <label>saeneyti</label>
     <race>PGD_Saeneyti</race>
-    <combatPower>260</combatPower>
+    <combatPower>400</combatPower>
     <ecoSystemWeight>2.0</ecoSystemWeight>
     <wildGroupSize>3~7</wildGroupSize>
     <lifeStages>

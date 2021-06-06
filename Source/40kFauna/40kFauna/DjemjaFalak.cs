@@ -14,61 +14,48 @@ using Verse.Sound;
 namespace PGD_40kFauna
 {
 
-	[HarmonyPatch(typeof(Toils_Interpersonal), "TryRecruit")]
-	public static class Pawn_Toils_Interpersonal_DjemjaFalak_Recruit
-	{
+    [HarmonyPatch(typeof(InteractionWorker_RecruitAttempt), "Interacted")]
+    public static class InteractionWorker_RecruitAttempt_Interacted_DjemjaFalak
+    {
+        [HarmonyPrefix]
+        public static void Prefix(Pawn initiator, Pawn recipient)
+        {
+            Hediff DjemjaFalak = recipient.health.hediffSet.GetFirstHediffOfDef(PGD_40kFaunaDefOf.PGD_DjemjaFalak);
+            if (DjemjaFalak != null)
+            {
+                //Log.Message("hediff was found");
+                //then drop resistance by another 5 - 20
+
+                if (recipient.guest != null && recipient.guest.resistance > 0f)
+                {
+                    //Log.Message("the resistance condition was met");
+                    float extraResistanceDrop = Rand.Range(5, 20);
+                    recipient.guest.resistance = Mathf.Max(0f, recipient.guest.resistance - extraResistanceDrop);
+                    DebugActionsUtility.DustPuffFrom(recipient);
+
+                    //then rand.chance for brain damage - based on ticks since install
+
+                    if (recipient.Dead)
+                    {
+                        return;
+                    }
+                    if (Rand.Value <= DjemjaFalak.ageTicks * 0.00005)
+                    {
+                        BodyPartRecord brain = recipient.health.hediffSet.GetBrain();
+                        if (brain == null)
+                        {
+                            return;
+                        }
+                        int num = Rand.RangeInclusive(1, 5);
+                        recipient.TakeDamage(new DamageInfo(DamageDefOf.Burn, (float)num, 0f, -1f, recipient, brain, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
+                    }
+                }
 
 
-		[HarmonyPostfix]
-		public static void Postfix(Toil __instance, ref Toil __result)
-		{
-			Log.Message("we're actually fixing the right thing here");
-			Pawn pawn = __instance.actor;
-			if (pawn != null)
-			{
-				Log.Message("target pawn was found");
+            }
 
-				//check for djemja falak
+        }
+    }
 
-				Hediff DjemjaFalak = pawn.health.hediffSet.GetFirstHediffOfDef(PGD_40kFaunaDefOf.PGD_DjemjaFalak);
-				if (DjemjaFalak != null)
-				{
-					Log.Message("hediff was found");
-					//then drop resistance by another 5 - 20
 
-					if (pawn.guest != null && pawn.guest.resistance > 0f)
-					{
-						Log.Message("the resistance condition was met");
-						float extraResistanceDrop = Rand.Range(5, 20);
-						pawn.guest.resistance = Mathf.Max(0f, pawn.guest.resistance - extraResistanceDrop);
-						DebugActionsUtility.DustPuffFrom(pawn);
-
-						//then rand.chance for brain damage - based on ticks since install
-
-						if (pawn.Dead)
-						{
-							return;
-						}
-						if (Rand.Value <= DjemjaFalak.ageTicks * 0.00005)
-						{
-							BodyPartRecord brain = pawn.health.hediffSet.GetBrain();
-							if (brain == null)
-							{
-								return;
-							}
-							int num = Rand.RangeInclusive(1, 5);
-							pawn.TakeDamage(new DamageInfo(DamageDefOf.Flame, (float)num, 0f, -1f, pawn, brain, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
-						}
-					}
-
-					
-				}
-				
-			}
-
-			return;
-		}
-	}
-		
-	
 }

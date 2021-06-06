@@ -9,11 +9,18 @@ Mukaali tend to be passive creatures and extremely slow to anger, making them a 
 Mukaali are particularly useful as mounts because of their sheer stamina, which allows them to cross vast swaths of inhospitable environments without rest. These hardy beasts can go for long periods of time without food or water. This makes them an attractive proposition for long campaigns where re-supply is difficult./n/n
 In fact, Mukaali are usually much more resilient than their riders, and so their ability to endure is rarely put to anything resembling a true test. Those Tallarn Rough Rider regiments that employ Mukaali use the beasts to strategically outmanoeuvre their foes, using the tireless creatures to ride for days so that they can strike from angles unexpected.</description>
     <statBases>
-      <MoveSpeed>4.8</MoveSpeed>
-      <MarketValue>600</MarketValue>
+      <MoveSpeed>4.2</MoveSpeed>
+      <MarketValue>750</MarketValue>
       <ComfyTemperatureMin>10</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
     </statBases>
+	    <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>12</milkAmount>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>left foot</label>
@@ -54,7 +61,7 @@ In fact, Mukaali are usually much more resilient than their riders, and so their
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Elephant</leatherDef>
       <gestationPeriodDays>48</gestationPeriodDays>
-      <wildness>0.20</wildness>
+      <wildness>0.15</wildness>
       <nuzzleMtbHours>24</nuzzleMtbHours>
       <trainability>Intermediate</trainability>
       <lifeExpectancy>50</lifeExpectancy>
@@ -164,11 +171,7 @@ In fact, Mukaali are usually much more resilient than their riders, and so their
           <texPath>Dessicated/Mukaali</texPath>
           <drawSize>4</drawSize>
         </dessicatedBodyGraphicData>
-        <butcherBodyPart>
-          <bodyPartGroup>TuskAttackTool</bodyPartGroup>
-          <thing>ElephantTusk</thing>
-          <allowFemale>false</allowFemale>
-        </butcherBodyPart>
+
       </li>
     </lifeStages>
   </PawnKindDef>

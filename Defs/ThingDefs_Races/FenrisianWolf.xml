@@ -7,29 +7,28 @@
 When tamed, Fenrisian Wolves will fight ferociously beside their master against his foes and certain breeds of these beasts can even be ridden as a form of cavalry into combat.</description>
     <race>
       <meatLabel>wolf meat</meatLabel>
-	  <wildness>0.95</wildness>
+	  <wildness>0.90</wildness>
 	  <manhunterOnTameFailChance>0.70</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.70</manhunterOnDamageChance>
 	  <maxPreyBodySize>4.3</maxPreyBodySize>
-	  <baseBodySize>3.</baseBodySize>
+	  <baseBodySize>3.5</baseBodySize>
       <baseHungerRate>0.6</baseHungerRate>
-      <baseHealthScale>7.2</baseHealthScale>
-	  <wildBiomes>
-				<BorealForest>0.4</BorealForest>
-				<Tundra>0.05</Tundra>
-				<ColdBog>0.05</ColdBog>
-				<TemperateSwamp>0.1</TemperateSwamp>
-				<TropicalSwamp>0.005</TropicalSwamp>
-				<TemperateForest>0.05</TemperateForest>
-				<AridShrubland>0.</AridShrubland>
-			    <Desert>0.0</Desert>
-                <TropicalRainforest>0.05</TropicalRainforest>
-
-			</wildBiomes>
+      <baseHealthScale>9.2</baseHealthScale>
+		<wildBiomes>
+			<BorealForest>0.4</BorealForest>
+			<Tundra>0.05</Tundra>
+			<ColdBog>0.05</ColdBog>
+			<TemperateSwamp>0.1</TemperateSwamp>
+			<TropicalSwamp>0.005</TropicalSwamp>
+			<TemperateForest>0.05</TemperateForest>
+			<AridShrubland>0.</AridShrubland>
+		    <Desert>0.0</Desert>
+            <TropicalRainforest>0.05</TropicalRainforest>
+		</wildBiomes>
     </race>
 	<statBases>
-      <MoveSpeed>6.2</MoveSpeed>
-      <MarketValue>1500</MarketValue>
+      <MoveSpeed>5.9</MoveSpeed>
+      <MarketValue>5500</MarketValue>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.33</ArmorRating_Sharp>
@@ -107,6 +106,7 @@ When tamed, Fenrisian Wolves will fight ferociously beside their master against 
     <label>timber wolf</label>
     <labelPlural>fenrisian wolves</labelPlural>
     <race>PGD_FenrisianWolf</race>
+	<combatPower>550</combatPower>
 	<alternateGraphicChance>0.99</alternateGraphicChance>
     <alternateGraphics>
 		<li><color>(156,136,85)</color></li>
