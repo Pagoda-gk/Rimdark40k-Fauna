@@ -2,10 +2,10 @@
 <Defs>
 	<ThingDef ParentName="MealCooked">
 		<defName>MealGroxMeat</defName>
-		<label>grox meat meal</label>
-		<description>A simple meal made from grox meat.</description>
+		<label>grox meat burger</label>
+		<description>A burger made from grox meat.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/Simple</texPath>
+			<texPath>Items/GroxBurger</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -23,9 +23,9 @@
   
   <RecipeDef ParentName="CookMealBase">
     <defName>CookMealGrox</defName>
-    <label>cook grox meat meal</label>
-    <description>Cook a meal from grox meat.</description>
-    <jobString>Cooking grox meat meal.</jobString>
+    <label>cook grox meat burger</label>
+    <description>Make a burger from grox meat.</description>
+    <jobString>Cooking grox meat burger.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
@@ -57,8 +57,8 @@
 		<durationDays>1</durationDays>
 		<stages>
 			<li>
-				<label>ate grox</label>
-				<description>Grox meat is incomparable, I love it!</description>
+				<label>ate grox burger</label>
+				<description>Nothing hits the spot like a grox burger.</description>
 				<baseMoodEffect>8</baseMoodEffect>
 			</li>
 		</stages>

@@ -56,6 +56,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DjemjaFalak.cs" />
+    <Compile Include="KhymeraHorror.cs" />
     <Compile Include="FerroBeastFood\JobDriver_Ingest_Ferro.cs" />
     <Compile Include="FerroBeastFood\FerroFoods.cs" />
     <Compile Include="FerroBeastFood\JobGiver_GetFood_Ferro.cs" />
