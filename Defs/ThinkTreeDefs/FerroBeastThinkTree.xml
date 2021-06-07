@@ -340,13 +340,6 @@
     </thinkRoot>
   </ThinkTreeDef> 
   
-    <JobDef>
-    <defName>PGD_IngestMetallic</defName>
-    <driverClass>PGD_40kFauna.JobDriver_Ingest_Ferro</driverClass>
-    <reportString>consuming TargetA.</reportString>
-    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef>
-
 
 
 </Defs>

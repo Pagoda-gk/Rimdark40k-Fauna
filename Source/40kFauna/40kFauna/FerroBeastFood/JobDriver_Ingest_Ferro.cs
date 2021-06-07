@@ -211,24 +211,26 @@ namespace PGD_40kFauna
                 {
                     num = Mathf.Max(num, 0.75f);
                 }
-                float num2 = thing.def.BaseMass;
-                if (thing.def.useHitPoints)
+                float num2 = FerroFoods.NutritionForMetallic(thing);
+                if (thing.def.useHitPoints && thing.def.stackLimit == 1)
                 {
                     thing.HitPoints -= (int)(thing.MaxHitPoints * num);
                     if (thing.HitPoints <= 0)
                     {
+                        Log.Message("did the desytroy condition");
                         thing.Destroy(DestroyMode.Vanish);
                     }
                 }
                 else
                 {
-                    int thingsToDestroy = (int)(num * thing.def.stackLimit);
-                    //Log.Message(thingsToDestroy.ToString());
+                    int thingsToDestroy = (int)(num);
+                    Log.Message(thingsToDestroy.ToString());
 
                     thing.stackCount = thing.stackCount - thingsToDestroy;
                     //Log.Message(thing.stackCount.ToString());
                     if (thing.stackCount < 10)
                     {
+                        Log.Message("just did the nom");
                         thing.Destroy(DestroyMode.Vanish);
                     }
 

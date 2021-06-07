@@ -139,6 +139,7 @@ Their phasing powers also mean Khymerae can appear inside areas thought secure -
     <race>PGD_Khymera</race>
     <combatPower>160</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
+	<canArriveManhunter>true</canArriveManhunter>
     <lifeStages>
       <li>
         <bodyGraphicData>

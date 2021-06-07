@@ -9,12 +9,12 @@
 Catachan Devils are able to move with surprising speed for something of such large size, and are superbly adapted to move across a large variety of terrain. Once a Catachan Devil has captured its unfortunate victim, it will either shred it with its razor-sharp claws or sting it into insensibility with its barbed tail, before finally consuming it./n/n
 Catachan Devils are territorial, yet quite sociable creatures, tending to form nesting groups with others of their kind. The entire nest will come together to defend their territory from any intruders, be it rival Devils, human colonists, or other predators, and have even been known to attack Imperial Guard tank companies.</description>
     <statBases>
-      <MoveSpeed>3.85</MoveSpeed>
-      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
-      <MarketValue>2000</MarketValue>
+      <MoveSpeed>5.85</MoveSpeed>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <MarketValue>5500</MarketValue>
       <LeatherAmount>0</LeatherAmount>
-      <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
     </statBases>
     <uiIconScale>1.15</uiIconScale>
     <tools>
@@ -76,9 +76,9 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
     <race>
       <body>MillipedeWithClaws</body>
       <baseHungerRate>0.20</baseHungerRate>
-	  <baseBodySize>4</baseBodySize>
+	  <baseBodySize>6</baseBodySize>
 	  <predator>true</predator>
-      <baseHealthScale>4.5</baseHealthScale>
+      <baseHealthScale>8</baseHealthScale>
 	  <foodType>CarnivoreAnimalStrict</foodType>
       <gestationPeriodDays>12</gestationPeriodDays>
       <meatLabel>insect meat</meatLabel>
@@ -105,11 +105,11 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
         </li>
         <li>
           <def>EusocialInsectJuvenile</def>
-          <minAge>0.03</minAge>
+          <minAge>1</minAge>
         </li>
         <li>
           <def>EusocialInsectAdult</def>
-          <minAge>0.2</minAge>
+          <minAge>2</minAge>
           <soundWounded>Pawn_BigInsect_Pain</soundWounded>
           <soundDeath>Pawn_BigInsect_Death</soundDeath>
           <soundCall>Pawn_BigInsect_Call</soundCall>
@@ -129,11 +129,12 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
     <defName>PGD_CatachanDevil</defName>
     <label>catachan devil</label>
     <race>PGD_CatachanDevil</race>
-    <combatPower>500</combatPower>
+    <combatPower>950</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>0.90</ecoSystemWeight>
     <lifeStages>
       <li>
+	          <label>devilspawn</label>
         <bodyGraphicData>
           <texPath>Bugs/CatachanDevil</texPath>
           <drawSize>3.0</drawSize>
@@ -183,6 +184,25 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
       </li>
     </lifeStages>
   </PawnKindDef>
+  
+    <ThingDef ParentName="EggFertBase">
+    <defName>PGD_EggCatachanDevilFertilized</defName>
+    <label>cobra egg (fert.)</label>
+    <description>A fertilized catachan devil egg. If all goes well, it should hatch into a devilspawn. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>60.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>4.</hatcherDaystoHatch>
+        <hatcherPawn>PGD_CatachanDevil</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
 
 
 </Defs>

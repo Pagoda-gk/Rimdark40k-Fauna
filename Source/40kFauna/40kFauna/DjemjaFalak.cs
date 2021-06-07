@@ -29,8 +29,8 @@ namespace PGD_40kFauna
                 if (recipient.guest != null && recipient.guest.resistance > 0f)
                 {
                     //Log.Message("the resistance condition was met");
-                    float extraResistanceDrop = Rand.Range(5, 20);
-                    recipient.guest.resistance = Mathf.Max(0f, recipient.guest.resistance - extraResistanceDrop);
+                    //float extraResistanceDrop = Rand.Range(5, 20);
+                    recipient.guest.resistance = Mathf.Max(0f, recipient.guest.resistance - 5);
                     DebugActionsUtility.DustPuffFrom(recipient);
 
                     //then rand.chance for brain damage - based on ticks since install
@@ -39,7 +39,7 @@ namespace PGD_40kFauna
                     {
                         return;
                     }
-                    if (Rand.Value <= DjemjaFalak.ageTicks * 0.00005)
+                    if (Rand.Value <= DjemjaFalak.ageTicks * 0.000001)
                     {
                         BodyPartRecord brain = recipient.health.hediffSet.GetBrain();
                         if (brain == null)
