@@ -211,7 +211,7 @@ namespace PGD_40kFauna
                 {
                     num = Mathf.Max(num, 0.75f);
                 }
-                float num2 = FerroFoods.NutritionForMetallic(thing);
+                float num2 = FerroFoods.NutritionForMetallic(thing) * thing.stackCount;
                 if (thing.def.useHitPoints && thing.def.stackLimit == 1)
                 {
                     thing.HitPoints -= (int)(thing.MaxHitPoints * num);
@@ -223,10 +223,10 @@ namespace PGD_40kFauna
                 }
                 else
                 {
-                    int thingsToDestroy = (int)(num);
+                    int thingsToDestroy = (int)(num / FerroFoods.NutritionForMetallic(thing));
                     Log.Message(thingsToDestroy.ToString());
 
-                    thing.stackCount = thing.stackCount - thingsToDestroy;
+                    thing.stackCount -= thingsToDestroy;
                     //Log.Message(thing.stackCount.ToString());
                     if (thing.stackCount < 10)
                     {
