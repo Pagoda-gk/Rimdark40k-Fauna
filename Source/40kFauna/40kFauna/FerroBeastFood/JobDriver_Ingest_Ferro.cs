@@ -206,7 +206,7 @@ namespace PGD_40kFauna
                 Job curJob = actor.jobs.curJob;
                 Thing thing = curJob.GetTarget(ingestibleInd).Thing;
 
-                float num = ingester.needs.food.NutritionWanted;
+                float num = ingester.needs.food.NutritionWanted / FerroFoods.NutritionForMetallic(thing);
                 if (curJob.overeat)
                 {
                     num = Mathf.Max(num, 0.75f);
@@ -239,7 +239,7 @@ namespace PGD_40kFauna
                 {
                     ingester.needs.food.CurLevel += num2;
                 }
-                ingester.records.AddTo(RecordDefOf.NutritionEaten, num2);
+                ingester.records.AddTo(RecordDefOf.NutritionEaten, num2 * num);
             };
             toil.defaultCompleteMode = ToilCompleteMode.Instant;
             return toil;
