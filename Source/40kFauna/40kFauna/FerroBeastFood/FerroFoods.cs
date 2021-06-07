@@ -1,6 +1,7 @@
 ﻿using Verse;
 using RimWorld;
 using System.Collections.Generic;
+using System;
 
 namespace PGD_40kFauna
 {
@@ -31,7 +32,8 @@ namespace PGD_40kFauna
 
             public static float NutritionForMetallic(Thing thing)
             {
-                return thing.def.BaseMass * thing.def.BaseMarketValue;
+            return (float)Math.Max(thing.def.BaseMass / 2, 0.01);
+            
             }
 
         
