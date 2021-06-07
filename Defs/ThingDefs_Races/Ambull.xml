@@ -121,7 +121,7 @@
     <label>ambull</label>
     <race>PGD_Ambull</race>
     <combatPower>300</combatPower>
-    <canArriveManhunter>false</canArriveManhunter>
+    <canArriveManhunter>true</canArriveManhunter>
     <ecoSystemWeight>0.90</ecoSystemWeight>
     <lifeStages>
       <li>
