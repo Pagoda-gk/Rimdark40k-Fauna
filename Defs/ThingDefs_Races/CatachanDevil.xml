@@ -86,18 +86,7 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
       <lifeExpectancy>10</lifeExpectancy>
 	  <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 	  <manhunterOnTameFailChance>1.00</manhunterOnTameFailChance>
-	  <wildBiomes>
-				<BorealForest>0.1</BorealForest>
-				<Tundra>0.01</Tundra>
-				<ColdBog>0.05</ColdBog>
-				<TemperateSwamp>0.1</TemperateSwamp>
-				<TropicalSwamp>0.1</TropicalSwamp>
-				<TemperateForest>0.2</TemperateForest>
-				<AridShrubland>0.2</AridShrubland>
-			    <Desert>0.</Desert>
-                <TropicalRainforest>0.2</TropicalRainforest>
 
-			</wildBiomes>
       <lifeStageAges>
         <li>
           <def>EusocialInsectLarva</def>
