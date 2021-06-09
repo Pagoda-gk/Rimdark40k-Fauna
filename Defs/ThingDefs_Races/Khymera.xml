@@ -4,7 +4,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_Khymera</defName>
     <label>khymera</label>
-	<thingClass>PGD_40kFauna.WarpBeing</thingClass>
+	<!--<thingClass>PGD_40kFauna.WarpBeing</thingClass>-->
     <description>Khymerae are terrifying creatures, literally born from an intelligent being's nightmares. They spawn in the Warp or on Daemon Worlds, coalescing into existence like malignant cysts around the psychic energies that fear and terror leaves in the Immaterium. They do not form at the whim of the Chaos Gods nor do they appear to be fragments of these powers.\n\n
 Taxonomists of the Ordo Malleus classify them not as actual daemons but as Warp creatures, one example of the many unnatural flora and fauna existing in the Immaterium, though this distinction is usually lost on those facing the beasts.\n\n
 Khymerae lack a proper corporeal form, allowing them to flicker between realspace and the Sea of Souls at whim, appearing momentarily before a foe and then vanishing suddenly to launch an attack from an unexpected direction.\n\n
@@ -83,7 +83,7 @@ Their phasing powers also mean Khymerae can appear inside areas thought secure -
 		<body>QuadrupedAnimalWithPawsAndTail</body>
 		<predator>true</predator>
 		<maxPreyBodySize>2.3</maxPreyBodySize>
-		<deathActionWorkerClass>PGD_40kFauna.DeathActionWorker_WarpBeing</deathActionWorkerClass>
+		<!--<deathActionWorkerClass>PGD_40kFauna.DeathActionWorker_WarpBeing</deathActionWorkerClass>-->
 		<petness>0.5</petness>
 		<baseBodySize>1.0</baseBodySize>
 		<baseHungerRate>0.25</baseHungerRate>
