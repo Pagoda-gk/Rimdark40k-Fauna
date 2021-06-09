@@ -10,7 +10,7 @@ namespace PGD_40kFauna
 {
 
 
-    public class IncidentWorker_CatachanDevil : IncidentWorker
+    public class IncidentWorker_LocustSwarm : IncidentWorker
     {
 
 
@@ -19,7 +19,7 @@ namespace PGD_40kFauna
         {
             Map map = (Map)parms.target;
             IntVec3 intVec;
-            return map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDef.Named("PGD_CatachanDevil")) && this.TryFindEntryCell(map, out intVec);
+            return map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDef.Named("PGD_XothicBloodLocustS")) && this.TryFindEntryCell(map, out intVec);
         }
 
         private bool TryFindEntryCell(Map map, out IntVec3 cell)
@@ -30,7 +30,7 @@ namespace PGD_40kFauna
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            PawnKindDef pawnKindDef = PawnKindDef.Named("PGD_CatachanDevil");
+            PawnKindDef pawnKindDef = PawnKindDef.Named("PGD_XothicBloodLocustS");
             IntVec3 intVec;
             if (!RCellFinder.TryFindRandomPawnEntryCell(out intVec, map, CellFinder.EdgeRoadChance_Animal))
             {
@@ -39,15 +39,22 @@ namespace PGD_40kFauna
 
             Rot4 rot = Rot4.FromAngleFlat((map.Center - intVec).AngleFlat);
 
-            IntVec3 loc2 = CellFinder.RandomClosewalkCellNear(intVec, map, 1, null);
-            Pawn newThing = PawnGenerator.GeneratePawn(pawnKindDef, null);
-            newThing.gender = Gender.Female;
-            GenSpawn.Spawn(newThing, loc2, map, WipeMode.Vanish);
+            List<Thing> spawned = new List<Thing>();
+            int toSpawn = Rand.Range(4, 9);
+            int i = 0;
+            for (i = 0; i < toSpawn; i++)
+            {
+                IntVec3 loc2 = CellFinder.RandomClosewalkCellNear(intVec, map, 1, null);
+                Pawn newThing = PawnGenerator.GeneratePawn(pawnKindDef, null);
+                GenSpawn.Spawn(newThing, loc2, map, WipeMode.Vanish);
+                spawned.Add(newThing);
+                
+            }
 
 
 
 
-            Find.LetterStack.ReceiveLetter("LetterLabelCatachanDevil".Translate(), "CatachanDevil".Translate(), LetterDefOf.ThreatBig, newThing, null, null);
+            Find.LetterStack.ReceiveLetter("LetterLabelLocustSwarm".Translate(), "LocustSwarm".Translate(), LetterDefOf.ThreatBig, spawned, null, null);
 
 
 

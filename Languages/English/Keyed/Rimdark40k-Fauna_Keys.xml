@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<LetterLabelCatachanDevil>Catachan devil</LetterLabelCatachanDevil>
+	<CatachanDevil>A catachan devil has appeared. This monstrous creature will stay in the area as a pack.\n\nIt may stay for some time and will become very aggressive if it thinks it's territory is being threatened.</CatachanDevil>
+	
+	
+	<LetterLabelLocustSwarm>Xothic blood locust swarm</LetterLabelLocustSwarm>
+	<LocustSwarm>A small group of xothic blood locusts has arrived in the area. While it's solitaria form seems innocent enough, they eat constantly and reproduce quickly.\n\nWhen in large numbers, a chemical change unleashes the bloodthirsty gregaria form, which is just as hungry - except grass no longer satisfies it's needs! The longer you wait to deal with it, the more out of control the swarm will get.</LocustSwarm>
+	
+	<LetterLabelKhymeraAttack>Khymera attack</LetterLabelKhymeraAttack>
+	<KhymeraAttack>Realspace swells and groans as warp energies puncture through. A group of ravenous khymerae materialises.</KhymeraAttack>
+	
+</LanguageData>

@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace PGD_40kFauna
 {
-    public class DeathActionWorker_WarpSpawn : DeathActionWorker
+    public class DeathActionWorker_WarpBeing : DeathActionWorker
     {
         public override void PawnDied(Corpse corpse)
         {

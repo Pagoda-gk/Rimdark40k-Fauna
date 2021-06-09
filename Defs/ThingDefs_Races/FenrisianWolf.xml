@@ -3,7 +3,7 @@
   <ThingDef ParentName="ThingBaseWolf">
     <defName>PGD_FenrisianWolf</defName>
     <label>fenrisian wolf</label>
-    <description>The massive Fenrisian Wolf is a fearsome semi-sentient predator native to the frozen planet Fenris. As with all creatures of this planet, the wolves have adapted to hard, unpredictable living and as such are vicious and cunning predators./n/n
+    <description>The massive Fenrisian Wolf is a fearsome semi-sentient predator native to the frozen planet Fenris. As with all creatures of this planet, the wolves have adapted to hard, unpredictable living and as such are vicious and cunning predators.\n\n
 When tamed, Fenrisian Wolves will fight ferociously beside their master against his foes and certain breeds of these beasts can even be ridden as a form of cavalry into combat.</description>
     <race>
       <meatLabel>wolf meat</meatLabel>

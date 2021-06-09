@@ -56,9 +56,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatachanDevil.cs" />
+    <Compile Include="DefReferences.cs" />
+    <Compile Include="Events\KhymeraAttack.cs" />
+    <Compile Include="Events\LocustSwarm.cs" />
+    <Compile Include="WarpBeingThought.cs" />
+    <Compile Include="Events\CatachanDevil.cs" />
     <Compile Include="DjemjaFalak.cs" />
-    <Compile Include="WarpSpawnDeath.cs" />
+    <Compile Include="WarpBeingDeath.cs" />
     <Compile Include="FerroBeastFood\JobDriver_Ingest_Ferro.cs" />
     <Compile Include="FerroBeastFood\FerroFoods.cs" />
     <Compile Include="FerroBeastFood\JobGiver_GetFood_Ferro.cs" />

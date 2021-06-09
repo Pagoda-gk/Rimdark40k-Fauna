@@ -4,9 +4,9 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>PGD_Razorwing</defName>
     <label>razorwing</label>
-    <description>The Razorwing is a large avian creature native to many worlds of the Koronus Expanse and is known to be a particularly effective and vicious aerial predator./n/n
-The creature is an incredibly fast flyer which they use for an initial attack dive,although very rarely otherwise as they would overshoot their target./n/n
-The claws and beak of the Razorwing are strong enough to cleave through the mass of its prey to get to the bones inside. The beasts are known to especially delight in crushing and eating the bones of their victims as well as the flesh. It is believed that it uses this calcium to strengthen and sharpen it’s feathers into tough and incredibly sharp tissue, like oceanic coral./n/n
+    <description>The Razorwing is a large avian creature native to many worlds of the Koronus Expanse and is known to be a particularly effective and vicious aerial predator.\n\n
+The creature is an incredibly fast flyer which they use for an initial attack dive,although very rarely otherwise as they would overshoot their target.\n\n
+The claws and beak of the Razorwing are strong enough to cleave through the mass of its prey to get to the bones inside. The beasts are known to especially delight in crushing and eating the bones of their victims as well as the flesh. It is believed that it uses this calcium to strengthen and sharpen it’s feathers into tough and incredibly sharp tissue, like oceanic coral.\n\n
 This means the entirety of the Razorwing is a weapon, with such speed in its dive that it is akin to firing a bullet at its target, allowing the creature to slice or, in some cases, tear completely through a victim's body.</description>
     <statBases>
       <MoveSpeed>7.2</MoveSpeed>

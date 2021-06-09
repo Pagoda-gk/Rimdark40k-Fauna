@@ -24,8 +24,8 @@
 	    <graphicData>
       <texPath>Items/DjemjaFalak</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	           <color>(255,255,255)</color>
       <drawSize>0.80</drawSize>
-	        <color>(255,255,255)</color>
     </graphicData>
     <statBases>
       <Mass>2</Mass>

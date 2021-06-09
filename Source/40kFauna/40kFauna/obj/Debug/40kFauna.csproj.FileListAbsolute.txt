@@ -7,3 +7,13 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kF
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\40kFauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna-main\Assemblies\40kFauna.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna-main\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna-main\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna-main\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna-main\Source\40kFauna\40kFauna\obj\Debug\40kFauna.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna\Assemblies\40kFauna.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimdark40k-Fauna\Source\40kFauna\40kFauna\obj\Debug\40kFauna.csproj.CopyComplete

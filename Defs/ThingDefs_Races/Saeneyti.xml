@@ -3,7 +3,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_Saeneyti</defName>
     <label>saeneyti</label>
-    <description>This enormous Elk type creature has been introduced to many ice worlds where it serves as a reliable mount and pack animal. It’s thick layers of fur allow it to withstand incredibly low temperatures and it’s complex antlers are able to detect heat and food sources./n/n
+    <description>This enormous Elk type creature has been introduced to many ice worlds where it serves as a reliable mount and pack animal. It’s thick layers of fur allow it to withstand incredibly low temperatures and it’s complex antlers are able to detect heat and food sources.\n\n
 The saeneyti is usually a slow moving, docile creature, however when threatened it can move at surprising speeds to charge it’s enemy. This is not something easily brushed off, as the creature can reach 20 feet at the shoulder and weigh several tonnes.</description>
     <statBases>
       <MoveSpeed>4.2</MoveSpeed>
