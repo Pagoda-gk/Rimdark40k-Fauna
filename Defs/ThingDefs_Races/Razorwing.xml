@@ -13,6 +13,7 @@ This means the entirety of the Razorwing is a weapon, with such speed in its div
       <MarketValue>400</MarketValue>
       <ComfyTemperatureMin>-8</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
+	  <ArmorRating_Sharp>0.36</ArmorRating_Sharp>
     </statBases>
     <race>
       <baseBodySize>0.5</baseBodySize>

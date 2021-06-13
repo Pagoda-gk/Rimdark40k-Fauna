@@ -37,16 +37,22 @@ namespace PGD_40kFauna
             Rot4 rot = Rot4.FromAngleFlat((map.Center - intVec).AngleFlat);
 
             List<Thing> spawned = new List<Thing>();
-            int toSpawn = Rand.Range(1, 2);
-            int i = 0;
-            for (i = 0; i < toSpawn; i++)
+            int adults = Rand.Range(1, 3);
+            for (int i = 0; i < adults; i++)
             {
                 IntVec3 loc2 = CellFinder.RandomClosewalkCellNear(intVec, map, 1, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(pawnKindDef, null);
                 GenSpawn.Spawn(newThing, loc2, map, WipeMode.Vanish);
                 spawned.Add(newThing);
-                
-
+            }
+            int children = Rand.Range(1, 6);
+            for (int i = 0; i < children; i++)
+            {
+                IntVec3 loc2 = CellFinder.RandomClosewalkCellNear(intVec, map, 1, null);
+                Pawn newThing = PawnGenerator.GeneratePawn(pawnKindDef, null);
+                newThing.ageTracker.AgeBiologicalTicks = 1;
+                GenSpawn.Spawn(newThing, loc2, map, WipeMode.Vanish);
+                spawned.Add(newThing);
             }
 
 

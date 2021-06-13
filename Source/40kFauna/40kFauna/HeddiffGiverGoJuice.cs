@@ -23,5 +23,6 @@ namespace PGD_40kFauna
             HealthUtility.AdjustSeverity(pawn, this.hediff, -0.00033333333f);
         }
         float threshold = 0.85f;
+
     }
 }

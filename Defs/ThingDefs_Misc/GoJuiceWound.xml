@@ -6,10 +6,9 @@
     <defName>PGD_ClawedFiendWound</defName>
     <hediffGivers>
 		<li Class="PGD_40kFauna.HediffGiver_HealthBelowThreshold">
-        <hediff>GoJuiceHigh</hediff> 
+		<hediff>GoJuiceHigh</hediff> 
         <threshold>0.95</threshold>
-		</li>
-        
+		</li>              
     </hediffGivers>
  </HediffGiverSetDef>
 

@@ -94,11 +94,11 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
         </li>
         <li>
           <def>EusocialInsectJuvenile</def>
-          <minAge>2</minAge>
+          <minAge>3</minAge>
         </li>
         <li>
           <def>EusocialInsectAdult</def>
-          <minAge>3</minAge>
+          <minAge>6</minAge>
           <soundWounded>Pawn_BigInsect_Pain</soundWounded>
           <soundDeath>Pawn_BigInsect_Death</soundDeath>
           <soundCall>Pawn_BigInsect_Call</soundCall>
@@ -136,8 +136,7 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
         <bodyGraphicData>
           <texPath>Bugs/Devilspawn</texPath>
           <drawSize>1.0</drawSize>
-          <color>(101,179,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
+		  <shaderType>Cutout</shaderType>
           <shadowData>
             <volume>(0.2, 0.3, 0.2)</volume>
             <offset>(0,0,0)</offset>
@@ -152,8 +151,7 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
         <bodyGraphicData>
           <texPath>Bugs/CatachanDevil</texPath>
           <drawSize>3.0</drawSize>
-          <color>(101,179,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
+		  <shaderType>Cutout</shaderType>
           <shadowData>
             <volume>(0.2, 0.3, 0.2)</volume>
             <offset>(0,0,0)</offset>
