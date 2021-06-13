@@ -36,8 +36,8 @@ The gregaria will consume it’s smaller cousins and then quickly strip the land
         <eggFertilizedDef>PGD_BloodLocustEggS</eggFertilizedDef>
 		<eggUnfertilizedDef>PGD_BloodLocustEggS</eggUnfertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>0.2</eggLayIntervalDays>
-        <eggCountRange>1~2</eggCountRange>
+        <eggLayIntervalDays>0.5</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
 		<eggLayFemaleOnly>false</eggLayFemaleOnly>
       </li>
     </comps>
@@ -56,6 +56,8 @@ The gregaria will consume it’s smaller cousins and then quickly strip the land
       <useMeatFrom>Megaspider</useMeatFrom>
       <wildness>0.95</wildness>
       <lifeExpectancy>10</lifeExpectancy>
+	        <manhunterOnTameFailChance>0.7</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
 	  <thinkTreeMain>XothicBloodLocustThinkTree</thinkTreeMain>
 
       <lifeStageAges>
@@ -173,7 +175,7 @@ The gregaria will consume it’s smaller cousins and then quickly strip the land
       <body>BeetleLike</body>
 	  <herdAnimal>true</herdAnimal>
       <baseBodySize>0.2</baseBodySize>
-      <baseHungerRate>2.2</baseHungerRate>
+      <baseHungerRate>1.9</baseHungerRate>
       <predator>true</predator>
 	  <canBePredatorPrey>false</canBePredatorPrey>
 	  <manhunterOnDamageChance>1</manhunterOnDamageChance>

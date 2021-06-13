@@ -14,7 +14,7 @@ These pheromones are also excreted through the creatures pores as sweat, and whe
       <ArmorRating_Heat>0.20</ArmorRating_Heat>
     </statBases>
 	<race>
-		<baseHealthScale>6.0</baseHealthScale>
+		<baseHealthScale>6.6</baseHealthScale>
 		<baseBodySize>3.6</baseBodySize>
 		<hediffGiverSets>
 		<li>PGD_ClawedFiendWound</li>

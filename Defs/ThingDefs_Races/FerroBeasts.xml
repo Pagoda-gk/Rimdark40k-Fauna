@@ -4,8 +4,8 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_FerroBeast</defName>
     <label>ferro-beast</label>
-    <description>Ferro-beasts are fauna native to the mineral-poor planet of Yimbo-bim. To live in their harsh conditions, where there is little and insufficient iron quantity in the environment, ferro-beasts have evolved a specialised feeding mechanism to digest ferrous metals directly from mineral ore deposits. For that purpose, the mouth of these creatures are surrounded by short tentacles covered in suckers. The suckers secrete an acidic syrup that turns ferro-ore into a liquid, digestible "soup", that ferro-beasts can eat easily.\n\n
-To find the metal ores, ferro-beasts have evolved a complex sensory organ to smell ores over a distance of many miles. The presence of pure, refined metals will attract these creatures from a great area around. So ferro-beasts may rampage to eat a landing spacecraft or other metal equipment of sentient species.</description>
+    <description>Ferro-beasts are fauna native to the mineral-poor planet of Yimbo-bim. They feed on metals by secreting an acid from suckers on their face, and then slurping up the 'soup'.\n\n
+To find the metal ores, ferro-beasts have evolved a complex sensory organ to smell ores over a distance of many miles. They can also dig them up from undergroupd if none are readily available.</description>
     <statBases>
       <MoveSpeed>1.0</MoveSpeed>
       <MarketValue>400</MarketValue>

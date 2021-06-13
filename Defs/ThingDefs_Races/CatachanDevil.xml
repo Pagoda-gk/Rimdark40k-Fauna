@@ -167,9 +167,8 @@ Catachan Devils are territorial, yet quite sociable creatures, tending to form n
       <li>
         <bodyGraphicData>
           <texPath>Bugs/CatachanDevil</texPath>
-          <drawSize>5.0</drawSize>
-          <color>(101,179,69)</color>
-		  <shaderType>CutoutComplex</shaderType>
+          <drawSize>7.0</drawSize>
+		  <shaderType>Cutout</shaderType>
           <shadowData>
             <volume>(0.2, 0.3, 0.2)</volume>
             <offset>(0,0,0)</offset>
