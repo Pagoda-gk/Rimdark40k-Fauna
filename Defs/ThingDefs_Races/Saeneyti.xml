@@ -68,7 +68,7 @@ The saeneyti is usually a slow moving, docile creature, however when threatened 
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Heavy</leatherDef>
       <gestationPeriodDays>48</gestationPeriodDays>
-      <wildness>0.15</wildness>
+      <wildness>0.5</wildness>
       <nuzzleMtbHours>24</nuzzleMtbHours>
       <trainability>Intermediate</trainability>
       <lifeExpectancy>50</lifeExpectancy>

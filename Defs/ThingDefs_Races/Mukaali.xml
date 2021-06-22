@@ -61,7 +61,7 @@ In fact, Mukaali are usually much more resilient than their riders, and so their
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Elephant</leatherDef>
       <gestationPeriodDays>48</gestationPeriodDays>
-      <wildness>0.15</wildness>
+      <wildness>0.5</wildness>
       <nuzzleMtbHours>24</nuzzleMtbHours>
       <trainability>Intermediate</trainability>
       <lifeExpectancy>50</lifeExpectancy>
