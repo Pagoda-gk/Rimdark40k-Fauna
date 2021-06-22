@@ -103,7 +103,7 @@ When tamed, Fenrisian Wolves will fight ferociously beside their master against 
   
   <PawnKindDef ParentName="AnimalKindBaseWolf">
     <defName>PGD_FenrisianWolf</defName>
-    <label>timber wolf</label>
+    <label>fenrisian wolf</label>
     <labelPlural>fenrisian wolves</labelPlural>
     <race>PGD_FenrisianWolf</race>
 	<combatPower>550</combatPower>
