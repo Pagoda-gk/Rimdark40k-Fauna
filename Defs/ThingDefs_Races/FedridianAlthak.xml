@@ -4,6 +4,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>PGD_FedridianAlthak</defName>
     <label>fedridian althak</label>
+		<thingClass>PGD_40kFauna.PheromonePop</thingClass>
     <description>Heavily-muscled wolf-like creatures with vicious unnatural claws and an absurdly powerful bite. They will only eat meat or corpses. If disturbed in the wild, they are very likely to attack.\n\nScientists say wargs are the descendants of weaponized military animals created for population suppression. The superstitious see them as the tools of an angry god.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
@@ -133,12 +134,12 @@
     <defName>PGD_FedridianAlthak</defName>
     <label>fedridian althak</label>
     <race>PGD_FedridianAlthak</race>
-    <combatPower>160</combatPower>
+    <combatPower>175</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
     <lifeStages>
       <li>
         <label>althak puppy</label>
-        <labelPlural>warg puppies</labelPlural>
+        <labelPlural>althak puppies</labelPlural>
         <bodyGraphicData>
           <texPath>Pests/FedridianAlthak</texPath>
           <drawSize>0.5</drawSize>

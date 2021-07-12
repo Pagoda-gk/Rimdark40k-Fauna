@@ -20,7 +20,9 @@ namespace PGD_40kFauna
         {
             if (corpse != null)
             {
+                MoteMaker.MakeAttachedOverlay(corpse, ThingDefOf.Mote_PsycastSkipFlashEntry, Vector3.zero, 1f, -1f).detachAfterTicks = 5;
                 corpse.Destroy();
+                
             }
         }
     }
