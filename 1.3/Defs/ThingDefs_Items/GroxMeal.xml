@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MealCooked">
+		<defName>MealGroxMeat</defName>
+		<label>grox meat burger</label>
+		<description>A burger made from grox meat.</description>
+		<graphicData>
+			<texPath>Items/GroxBurger</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<tasteThought>AteGroxMeatMeal</tasteThought>
+		</ingestible>
+  </ThingDef>
+  
+  <RecipeDef ParentName="CookMealBase">
+    <defName>CookMealGrox</defName>
+    <label>cook grox meat burger</label>
+    <description>Make a burger from grox meat.</description>
+    <jobString>Cooking grox meat burger.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Meat_PGD_Grox</li>
+          </thingDefs>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <MealGroxMeat>1</MealGroxMeat>
+    </products>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+	<ThoughtDef>
+		<defName>AteGroxMeatMeal</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate grox burger</label>
+				<description>Nothing hits the spot like a grox burger.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+  </Defs>

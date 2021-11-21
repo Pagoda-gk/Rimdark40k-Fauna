@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="OrbitalUtilityBase">
+    <defName>PGD_WarpRiftCreator</defName>
+    <label>warp rift creator</label>
+    <description>An ancient "key" that when activated punches a small entrance to the Warp. The disturbance is not enough to be noticed by the forces of Chaos but any lesser warp beings will be attracted through to Realspace.</description>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Spawn</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+		<spawnDef>PGD_Khymera</spawnDef>
+        <range>44.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+	<graphicData>
+      <texPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>1</maxCharges>
+        <destroyOnEmpty>true</destroyOnEmpty>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  </Defs>
