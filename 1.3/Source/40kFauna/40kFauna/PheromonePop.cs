@@ -10,10 +10,8 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace PGD_40kFauna
+namespace AdeptusMechanicus
 {
-
-
 	public class PheromonePop : Pawn
 	{
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)

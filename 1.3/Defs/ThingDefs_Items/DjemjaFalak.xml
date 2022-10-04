@@ -2,76 +2,76 @@
 <Defs>
 
 <HediffDef ParentName="ImplantHediffBase">
-    <defName>PGD_DjemjaFalak</defName>
-    <label>djemja falak</label>
-    <labelNoun>a djemja falak</labelNoun>
-    <description>A djemja falak parasite.</description>
-    <spawnThingOnRemoved>PGD_DjemjaFalak</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-    </addedPartProps>
-  </HediffDef>
+	<defName>OG_DjemjaFalak_Parasite</defName>
+	<label>djemja falak</label>
+	<labelNoun>a djemja falak</labelNoun>
+	<description>A djemja falak parasite.</description>
+	<spawnThingOnRemoved>OG_DjemjaFalak_Parasite</spawnThingOnRemoved>
+	<addedPartProps>
+		<solid>true</solid>
+	</addedPartProps>
+</HediffDef>
 
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>PGD_DjemjaFalak</defName>
-    <label>djemja falak</label>
-    <description>A warp attuned parasite. The creature feeds on consciousness, creating a feeling of euphoria. This aids in recruitment but at the risk of brain damage.</description>
-    <descriptionHyperlinks><RecipeDef>InstallDjemjaFalak</RecipeDef></descriptionHyperlinks>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <ComponentSpacer>3</ComponentSpacer>
-    </costList>
-	    <graphicData>
-      <texPath>Items/DjemjaFalak</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	           <color>(255,255,255)</color>
-      <drawSize>0.80</drawSize>
-    </graphicData>
-    <statBases>
-      <Mass>2</Mass>
-    </statBases>
-  </ThingDef>
+<ThingDef ParentName="BodyPartBionicBase">
+	<defName>OG_DjemjaFalak_Parasite</defName>
+	<label>djemja falak</label>
+	<description>A warp attuned parasite. The creature feeds on consciousness, creating a feeling of euphoria. This aids in recruitment but at the risk of brain damage.</description>
+	<descriptionHyperlinks><RecipeDef>OG_DjemjaFalak_Install</RecipeDef></descriptionHyperlinks>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>3</ComponentSpacer>
+	</costList>
+	<graphicData>
+		<texPath>Items/DjemjaFalak</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<color>(255,255,255)</color>
+		<drawSize>0.80</drawSize>
+	</graphicData>
+	<statBases>
+		<Mass>2</Mass>
+	</statBases>
+</ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallImplantBase">
-    <defName>InstallDjemjaFalak</defName>
-    <label>introduce djemja falak</label>
-    <description>Introduce a djemja falak.</description>
-    <descriptionHyperlinks>
-      <ThingDef>PGD_DjemjaFalak</ThingDef>
-      <HediffDef>PGD_DjemjaFalak</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Attaching a djemja falak</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>PGD_DjemjaFalak</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>PGD_DjemjaFalak</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Head</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>PGD_DjemjaFalak</addsHediff>
-  </RecipeDef>
-  
-    <RecipeDef ParentName="SurgeryRemoveImplantBase">
-    <defName>PGD_RemoveDjemjaFalak</defName>
-    <label>remove djemja falak</label>
-    <description>Remove the djemja falak.</description>
-    <descriptionHyperlinks>
-      <ThingDef>PGD_DjemjaFalak</ThingDef>
-      <HediffDef>PGD_DjemjaFalak</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Removing djemja falak.</jobString>
-    <removesHediff>PGD_DjemjaFalak</removesHediff>
-  </RecipeDef>
-  
-  </Defs>
+<RecipeDef ParentName="SurgeryInstallImplantBase">
+	<defName>OG_DjemjaFalak_Install</defName>
+	<label>introduce djemja falak</label>
+	<description>Introduce a djemja falak.</description>
+	<descriptionHyperlinks>
+		<ThingDef>OG_DjemjaFalak_Parasite</ThingDef>
+		<HediffDef>OG_DjemjaFalak_Parasite</HediffDef>
+	</descriptionHyperlinks>
+	<jobString>Attaching a djemja falak</jobString>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+				<li>OG_DjemjaFalak_Parasite</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>OG_DjemjaFalak_Parasite</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<appliedOnFixedBodyParts>
+		<li>Head</li>
+	</appliedOnFixedBodyParts>
+	<addsHediff>OG_DjemjaFalak_Parasite</addsHediff>
+</RecipeDef>
+	
+<RecipeDef ParentName="SurgeryRemoveImplantBase">
+	<defName>OG_DjemjaFalak_Remove</defName>
+	<label>remove djemja falak</label>
+	<description>Remove the djemja falak.</description>
+	<descriptionHyperlinks>
+		<ThingDef>OG_DjemjaFalak_Parasite</ThingDef>
+		<HediffDef>OG_DjemjaFalak_Parasite</HediffDef>
+	</descriptionHyperlinks>
+	<jobString>Removing djemja falak.</jobString>
+	<removesHediff>OG_DjemjaFalak_Parasite</removesHediff>
+</RecipeDef>
+	
+</Defs>

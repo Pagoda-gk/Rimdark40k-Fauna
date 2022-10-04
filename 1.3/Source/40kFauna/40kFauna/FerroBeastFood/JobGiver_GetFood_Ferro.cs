@@ -2,7 +2,7 @@
 using Verse.AI;
 using RimWorld;
 
-namespace PGD_40kFauna
+namespace AdeptusMechanicus
 {
     public class JobGiver_GetFood_Ferro : ThinkNode_JobGiver
     {
@@ -72,7 +72,7 @@ namespace PGD_40kFauna
             else return null;
             if (thing != null && pawn.Map.reservationManager.CanReserve(pawn, thing, 1))
             {
-                Job job3 = JobMaker.MakeJob(FerroFoods.Ferro_Eat, thing);
+                Job job3 = JobMaker.MakeJob(FaunaJobDefOf.OG_IngestMetallic, thing);
                 job3.count = 1;
                 return job3;
             }

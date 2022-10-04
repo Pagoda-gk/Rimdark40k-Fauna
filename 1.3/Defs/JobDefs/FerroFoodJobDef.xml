@@ -2,11 +2,11 @@
 <Defs>
 
 <JobDef>
-    <defName>PGD_IngestMetallic</defName>
-    <driverClass>PGD_40kFauna.JobDriver_Ingest_Ferro</driverClass>
-    <reportString>eating metals</reportString>
-    <checkOverrideOnDamage>OnlyIfInstigatorNotJobTarget</checkOverrideOnDamage>
-    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef>
-  
-  </Defs>
+	<defName>OG_IngestMetallic</defName>
+	<driverClass>AdeptusMechanicus.JobDriver_Ingest_Ferro</driverClass>
+	<reportString>eating metals</reportString>
+	<checkOverrideOnDamage>OnlyIfInstigatorNotJobTarget</checkOverrideOnDamage>
+	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+</JobDef>
+	
+</Defs>

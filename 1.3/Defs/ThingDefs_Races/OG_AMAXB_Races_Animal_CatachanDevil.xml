@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseInsect">
+		<defName>OG_Xenos_CatachanDevil</defName>
+		<label>catachan devil</label>
+		<description>The Catachan Devil is an insectoid creature native to the Imperial death world of Catachan. Catachan Devils are scorpion-like in appearance with a series of segmented body sections and pairs of legs terminating in a long tail with a poisonous barb, which curves forward over the creature's back.\n\nCatachan Devils are able to move with surprising speed for something of such large size, and are superbly adapted to move across a large variety of terrain. Once a Catachan Devil has captured its unfortunate victim, it will either shred it with its razor-sharp claws or sting it into insensibility with its barbed tail, before finally consuming it.\n\nCatachan Devils are territorial, yet quite sociable creatures, tending to form nesting groups with others of their kind. The entire nest will come together to defend their territory from any intruders, be it rival Devils, human colonists, or other predators, and have even been known to attack Imperial Guard tank companies.</description>
+		<statBases>
+			<MoveSpeed>5.85</MoveSpeed>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<MarketValue>5500</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+		</statBases>
+		<uiIconScale>1.15</uiIconScale>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>MillipedeWithClaws</body>
+			<baseHungerRate>2.5</baseHungerRate>
+			<baseBodySize>6</baseBodySize>
+			<predator>true</predator>
+			<baseHealthScale>8</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<gestationPeriodDays>40</gestationPeriodDays>
+			<meatLabel>insect meat</meatLabel>
+			<wildness>0.95</wildness>
+			<lifeExpectancy>30</lifeExpectancy>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1.00</manhunterOnTameFailChance>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>3</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>6</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>OG_Egg_CatachanDevil_Fertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>40</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>OG_Xenos_CatachanDevil</defName>
+		<label>catachan devil</label>
+		<race>OG_Xenos_CatachanDevil</race>
+		<combatPower>950</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.90</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>devilspawn</label>
+				<bodyGraphicData>
+					<texPath>Bugs/Devilspawn</texPath>
+					<drawSize>1.0</drawSize>
+					<shaderType>Cutout</shaderType>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Dessicated/CatachanDevil</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Bugs/CatachanDevil</texPath>
+					<drawSize>3.0</drawSize>
+					<shaderType>Cutout</shaderType>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Dessicated/CatachanDevil</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Bugs/CatachanDevil</texPath>
+					<drawSize>7.0</drawSize>
+					<shaderType>Cutout</shaderType>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Dessicated/CatachanDevil</texPath>
+					<drawSize>5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>OG_Egg_CatachanDevil_Fertilized</defName>
+		<label>catachan devil egg (fert.)</label>
+		<description>A fertilized catachan devil egg. If all goes well, it should hatch into a devilspawn. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>200.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>.1</hatcherDaystoHatch>
+				<hatcherPawn>OG_Xenos_CatachanDevil</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

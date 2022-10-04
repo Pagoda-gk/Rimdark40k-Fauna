@@ -2,19 +2,19 @@
 <Defs>
 
 <ThingDef ParentName="WoolBase">
-    <defName>WoolSaeneyti</defName>
-    <label>saeneyti wool</label>
-    <description>Soft, light and provides very good insulation. Saeneyti wool clothes can keep the body warm even in very cold conditions.</description>
-    <graphicData>
-      <color>(179,192,186)</color>
-    </graphicData>
-    <statBases>
-      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-    </statBases>
-    <stuffProps>
-      <color>(179,192,186)</color>
-    </stuffProps>
-  </ThingDef>
-  
-  </Defs>
+	<defName>WoolSaeneyti</defName>
+	<label>saeneyti wool</label>
+	<description>Soft, light and provides very good insulation. Saeneyti wool clothes can keep the body warm even in very cold conditions.</description>
+	<graphicData>
+		<color>(179,192,186)</color>
+	</graphicData>
+	<statBases>
+		<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+		<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+	</statBases>
+	<stuffProps>
+		<color>(179,192,186)</color>
+	</stuffProps>
+	</ThingDef>
+	
+	</Defs>

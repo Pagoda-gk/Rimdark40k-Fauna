@@ -3,19 +3,12 @@ using RimWorld;
 using System.Collections.Generic;
 using System;
 
-namespace PGD_40kFauna
+namespace AdeptusMechanicus
 {
-
-
     public static class FerroFoods
     {
-           
-        // set this to the def of your ferrobeasts race
-        public static ThingDef PGD_FerroBeast = DefDatabase<ThingDef>.GetNamed("PGD_FerroBeast", true);
-        public static JobDef Ferro_Eat = DefDatabase<JobDef>.GetNamed("PGD_IngestMetallic", true);
         public static List<ThingDef> foods;
-
-
+        public static float NutritionForMetallic(Thing thing) => (float)Math.Max(thing.def.BaseMass / 2, 0.01);
         public static List<ThingDef> Foods
         {
 
@@ -23,20 +16,13 @@ namespace PGD_40kFauna
             {
                 if (foods == null)
                 {
+                    foods = new List<ThingDef>();
                     foods = DefDatabase<ThingDef>.AllDefsListForReading.FindAll(x => x.stuffProps?.categories != null && x.stuffProps.categories.Contains(StuffCategoryDefOf.Metallic));
                 }
                 return foods;
             }
         }
 
-
-            public static float NutritionForMetallic(Thing thing)
-            {
-            return (float)Math.Max(thing.def.BaseMass / 2, 0.01);
-            
-            }
-
-        
     }
    
 }

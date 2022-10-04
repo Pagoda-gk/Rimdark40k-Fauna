@@ -2,17 +2,17 @@
 <Defs>
 
 <DamageDef ParentName="Bite">
-    <defName>BloodDrain</defName>
-    <label>blood drain</label>
+	<defName>BloodDrain</defName>
+	<label>blood drain</label>
 	<defaultArmorPenetration>1.0</defaultArmorPenetration>
-    <additionalHediffs>
-      <li>
-        <hediff>BloodLoss</hediff>
-        <severityPerDamageDealt>0.01</severityPerDamageDealt>
-        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
-      </li>
-    </additionalHediffs>
-    <impactSoundType>Slice</impactSoundType>
-  </DamageDef>
-  
-  </Defs>
+	<additionalHediffs>
+		<li>
+		<hediff>BloodLoss</hediff>
+		<severityPerDamageDealt>0.01</severityPerDamageDealt>
+		<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		</li>
+	</additionalHediffs>
+	<impactSoundType>Slice</impactSoundType>
+	</DamageDef>
+	
+	</Defs>

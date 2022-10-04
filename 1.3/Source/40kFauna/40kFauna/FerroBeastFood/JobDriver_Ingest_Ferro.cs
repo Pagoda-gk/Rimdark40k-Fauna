@@ -5,7 +5,7 @@ using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PGD_40kFauna
+namespace AdeptusMechanicus
 {
     public class JobDriver_Ingest_Ferro : JobDriver
     {
@@ -60,7 +60,7 @@ namespace PGD_40kFauna
 
         public override IEnumerable<Toil> MakeNewToils()
         {
-            if (pawn.def != FerroFoods.PGD_FerroBeast)
+            if (pawn.def != FaunaRacesDefOf.OG_Xenos_FerroBeast)
             { yield break; }
 
             this.FailOn(() => this.IngestibleSource.Destroyed);
@@ -99,10 +99,7 @@ namespace PGD_40kFauna
             {
                 initAction = delegate ()
                 {
-
-
                     Thing thing = this.job.GetTarget(TargetIndex.A).Thing;
-
                     if (!this.pawn.Reserve(thing, this.job, 10, 1, null, true))
                     {
                         Log.Error(string.Concat(new object[]
@@ -119,8 +116,6 @@ namespace PGD_40kFauna
                         this.pawn.jobs.EndCurrentJob(JobCondition.Errored, true, true);
                     }
                     this.job.count = 1;
-
-
                 },
                 defaultCompleteMode = ToilCompleteMode.Instant,
                 atomicWithPrevious = true

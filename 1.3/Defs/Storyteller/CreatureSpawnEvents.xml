@@ -1,49 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<IncidentDef>
-    <defName>PGD_IncidentCatachanDevil</defName>
-    <label>catachan devil arrives</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>PGD_40kFauna.IncidentWorker_CatachanDevil</workerClass>
-    <baseChance>.5</baseChance>
-    <category>Misc</category>
-    <minRefireDays>25</minRefireDays>
-    <pointsScaleable>true</pointsScaleable>
-    	<earliestDay>15</earliestDay>
+	<IncidentDef>
+		<defName>OG_IncidentCatachanDevil</defName>
+		<label>catachan devil arrives</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AdeptusMechanicus.IncidentWorker_CatachanDevil</workerClass>
+		<baseChance>.5</baseChance>
+		<category>Misc</category>
+		<minRefireDays>25</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>	
+		
+	<IncidentDef>
+		<defName>OG_IncidentLocustSwarm</defName>
+		<label>xothic blood locusts arrive</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AdeptusMechanicus.IncidentWorker_LocustSwarm</workerClass>
+		<baseChance>.5</baseChance>
+		<category>Misc</category>
+		<minRefireDays>25</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>	
+		
+	<IncidentDef>
+		<defName>OG_IncidentKhymeraAttack</defName>
+		<label>khymerae arrive</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AdeptusMechanicus.IncidentWorker_KhymeraAttack</workerClass>
+		<baseChance>.5</baseChance>
+		<category>Misc</category>
+		<minRefireDays>25</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>	
 
-  </IncidentDef>  
-  
-  <IncidentDef>
-    <defName>PGD_IncidentLocustSwarm</defName>
-    <label>xothic blood locusts arrive</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>PGD_40kFauna.IncidentWorker_LocustSwarm</workerClass>
-    <baseChance>.5</baseChance>
-    <category>Misc</category>
-    <minRefireDays>25</minRefireDays>
-    <pointsScaleable>true</pointsScaleable>
-    	<earliestDay>15</earliestDay>
-
-  </IncidentDef>  
-  
-    <IncidentDef>
-    <defName>PGD_IncidentKhymeraAttack</defName>
-    <label>khymerae arrive</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>PGD_40kFauna.IncidentWorker_KhymeraAttack</workerClass>
-    <baseChance>.5</baseChance>
-    <category>Misc</category>
-    <minRefireDays>25</minRefireDays>
-    <pointsScaleable>true</pointsScaleable>
-    	<earliestDay>15</earliestDay>
-
-  </IncidentDef>  
-  
-  </Defs>
+</Defs>

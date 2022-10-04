@@ -19,39 +19,39 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<tasteThought>AteGroxMeatMeal</tasteThought>
 		</ingestible>
-  </ThingDef>
-  
-  <RecipeDef ParentName="CookMealBase">
-    <defName>CookMealGrox</defName>
-    <label>cook grox meat burger</label>
-    <description>Make a burger from grox meat.</description>
-    <jobString>Cooking grox meat burger.</jobString>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Meat_PGD_Grox</li>
-          </thingDefs>
-        </filter>
-        <count>0.5</count>
-      </li>
-    </ingredients>
-    <products>
-      <MealGroxMeat>1</MealGroxMeat>
-    </products>
-    <workSkill>Cooking</workSkill>
+	</ThingDef>
+	
+	<RecipeDef ParentName="CookMealBase">
+	<defName>CookMealGrox</defName>
+	<label>cook grox meat burger</label>
+	<description>Make a burger from grox meat.</description>
+	<jobString>Cooking grox meat burger.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+		<li>
+		<filter>
+			<thingDefs>
+			<li>Meat_OG_Xenos_Grox</li>
+			</thingDefs>
+		</filter>
+		<count>0.5</count>
+		</li>
+	</ingredients>
+	<products>
+		<MealGroxMeat>1</MealGroxMeat>
+	</products>
+	<workSkill>Cooking</workSkill>
 	<recipeUsers>
 		<li>ElectricStove</li>
 		<li>FueledStove</li>
 	</recipeUsers>
-  </RecipeDef>
-  
+	</RecipeDef>
+	
 	<ThoughtDef>
 		<defName>AteGroxMeatMeal</defName>
 		<durationDays>1</durationDays>
@@ -63,5 +63,5 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-  
-  </Defs>
+	
+	</Defs>

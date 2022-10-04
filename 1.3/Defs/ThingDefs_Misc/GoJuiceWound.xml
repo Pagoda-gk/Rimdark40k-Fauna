@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
 
  <HediffGiverSetDef>
-    <defName>PGD_ClawedFiendWound</defName>
-    <hediffGivers>
-		<li Class="PGD_40kFauna.HediffGiver_HealthBelowThreshold">
-		<hediff>GoJuiceHigh</hediff> 
-        <threshold>0.95</threshold>
-		</li>              
-    </hediffGivers>
+	<defName>OG_Xenos_ClawedFiendWound</defName>
+	<hediffGivers>
+		<li Class="AdeptusMechanicus.HediffGiver_HealthBelowThreshold">
+			<hediff>GoJuiceHigh</hediff> 
+			<threshold>0.95</threshold>
+		</li>				
+	</hediffGivers>
  </HediffGiverSetDef>
 
-	  
-	  
 </Defs>

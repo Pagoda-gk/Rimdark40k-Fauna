@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseBear">
+		<defName>OG_Xenos_ClawedFiend</defName>
+		<label>clawed fiend</label>
+		<description>The Clawed Fiend is an alien beast whose body is an amalgamation of the most predatory aspects of nature. Its size is tremendous and it can move that bulk of muscle and claw at almost preternatural speeds.\n\nIf a Clawed Fiend is wounded it enters an even more furious state.Some studies of recovered corpses suggest that the creature is actually angered by the scent of its own blood, which contains a series of pheromones that enrage the creature and boosts its already considerate strength.\n\nThese pheromones are also excreted through the creatures pores as sweat, and when collected can be utilised as a substance many would recognise as go-juice.</description>
+		<statBases>
+			<MoveSpeed>4.7</MoveSpeed>
+			<MarketValue>6000</MarketValue>
+			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+		</statBases>
+		<race>
+			<baseHealthScale>6.6</baseHealthScale>
+			<baseBodySize>3.6</baseBodySize>
+			<hediffGiverSets>
+				<li>OG_Xenos_ClawedFiendWound</li>
+			</hediffGiverSets>
+			<wildness>0.97</wildness>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<wildBiomes>
+				<BorealForest>0.4</BorealForest>
+				<Tundra>0.5</Tundra>
+				<ColdBog>0.2</ColdBog>
+				<TemperateSwamp>0.0</TemperateSwamp>
+				<TropicalSwamp>0.0</TropicalSwamp>
+				<TemperateForest>0.1</TemperateForest>
+				<AridShrubland>0.2</AridShrubland>
+				<Desert>0.05</Desert>
+				<TropicalRainforest>0.2</TropicalRainforest>
+			</wildBiomes>
+		</race>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>23.6</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>GoJuice</milkDef>
+				<milkIntervalDays>5</milkIntervalDays>
+				<milkAmount>1</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BearBase">
+		<defName>OG_Xenos_ClawedFiend</defName>
+		<label>clawed fiend</label>
+		<race>OG_Xenos_ClawedFiend</race>
+		<combatPower>800</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Predators/ClawedFiend</texPath>
+					<drawSize>1.4</drawSize>
+					<shaderType>Cutout</shaderType>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Dessicated/ClawedFiend</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Predators/ClawedFiend</texPath>
+					<drawSize>2</drawSize>
+					<shaderType>Cutout</shaderType>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Dessicated/ClawedFiend</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Predators/ClawedFiend</texPath>
+					<drawSize>2.7</drawSize>
+					<shaderType>Cutout</shaderType>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Dessicated/ClawedFiend</texPath>
+					<drawSize>2.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

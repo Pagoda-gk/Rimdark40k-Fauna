@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseInsect">
+		<defName>OG_Xenos_XothicBloodLocustS</defName>
+		<label>xothic blood locust (solitaria)</label>
+		<description>The xothic blood locust is a horror story on most agri worlds. It’s hunger is insatiable even in the most nutrient- rich environments, and it’s reproduction cycle is uncontrollably fast.\n\nWhile it’s small, golden brown solitaria form is dangerous in swarms, it is mostly content to drain the fluids from plants and smaller animals. However the species undergoes a chemical transformation when a colony gets too large, and the larger gregaria form emerges.\n\nThe gregaria will consume it’s smaller cousins and then quickly strip the land of life forms, unwilling to stop even when faced with armed humanoids, or the largest of predators. Growth hormones spike and the locusts will breed even more quickly.</description>
+		<statBases>
+			<MoveSpeed>4.3</MoveSpeed>
+			<ArmorRating_Blunt>0.18</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.36</ArmorRating_Sharp>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<MarketValue>100</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<uiIconScale>2</uiIconScale>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>BloodSuckBite</li>
+				</capacities>
+				<power>2.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>OG_Egg_BloodLocustS_Fertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>OG_Egg_BloodLocustS_Fertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>0.5</eggLayIntervalDays>
+				<eggCountRange>1</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+		</comps>
+		<race>
+			<foodType>OmnivoreAnimal, AnimalProduct, Plant</foodType>
+			<body>BeetleLike</body>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHungerRate>3.0</baseHungerRate>
+			<predator>true</predator>
+			<herdAnimal>true</herdAnimal>
+			<willNeverEat>
+				<li>OG_Egg_BloodLocustS_Fertilized</li>
+				<li>OG_Egg_BloodLocustG_Fertilized</li>
+			</willNeverEat>
+			<baseHealthScale>0.5</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.95</wildness>
+			<lifeExpectancy>10</lifeExpectancy>
+			<manhunterOnTameFailChance>0.7</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<thinkTreeMain>XothicBloodLocustThinkTree</thinkTreeMain>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hasGenders>false</hasGenders>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>OG_Xenos_XothicBloodLocustS</defName>
+		<label>xothic blood locust (solitaria)</label>
+		<race>OG_Xenos_XothicBloodLocustS</race>
+		<combatPower>30</combatPower>
+		<wildGroupSize>2~5</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.2</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Bugs/XothicBloodLocust</texPath>
+					<drawSize>1.0</drawSize>
+					<color>(140,108,64)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Bugs/XothicBloodLocust</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Locust egg -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>OG_Egg_BloodLocustS_Fertilized</defName>
+		<label>xothic blood locust egg</label>
+		<description>A fertilized blood locust egg. If all goes well, it should hatch into an insatiable blood locust. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(210,34,62)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="AdeptusMechanicus.CompProperties_HatcherHorde">
+				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherPawn>OG_Xenos_XothicBloodLocustS</hatcherPawn>
+				<hordePawn>OG_Xenos_XothicBloodLocustG</hordePawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<!-- ==================Gregaria form========================== -->
+	
+	<ThingDef ParentName="BaseInsect">
+		<defName>OG_Xenos_XothicBloodLocustG</defName>
+		<label>Xothic blood locust (gregaria)</label>
+		<description>The xothic blood locust is a horror story on most agri worlds. It’s hunger is insatiable even in the most nutrient- rich environments, and it’s reproduction cycle is uncontrollably fast./n/nWhile it’s small, golden brown solitaria form is dangerous in swarms, it is mostly content to drain the fluids from plants and smaller animals. However the species undergoes a chemical transformation when a colony gets too large, and the larger gregaria form emerges./n/nThe gregaria will consume it’s smaller cousins and then quickly strip the land of life forms, unwilling to stop even when faced with armed humanoids, or the largest of predators. Growth hormones spike and the locusts will breed even more quickly.</description>
+		<statBases>
+			<MoveSpeed>4.3</MoveSpeed>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<MarketValue>100</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<uiIconScale>2</uiIconScale>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>BloodSuckBite</li>
+				</capacities>
+				<power>2.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>OG_Egg_BloodLocustG_Fertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>OG_Egg_BloodLocustG_Fertilized</eggUnfertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>0.2</eggLayIntervalDays>
+				<eggCountRange>2~5</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+		</comps>
+		<race>
+		<foodType>CarnivoreAnimal</foodType>
+			<body>BeetleLike</body>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHungerRate>1.9</baseHungerRate>
+			<predator>true</predator>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<willNeverEat>
+				<li>OG_Egg_BloodLocustG_Fertilized</li>
+			</willNeverEat>
+			<baseHealthScale>0.9</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.95</wildness>
+			<lifeExpectancy>10</lifeExpectancy>
+			<thinkTreeMain>XothicBloodLocustThinkTree</thinkTreeMain>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+					</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hasGenders>false</hasGenders>
+		</race>
+		<tradeTags>
+			<li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>OG_Xenos_XothicBloodLocustG</defName>
+		<label>Xothic blood locust (gregaria)</label>
+		<race>OG_Xenos_XothicBloodLocustG</race>
+		<combatPower>40</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Bugs/XothicBloodLocust</texPath>
+					<drawSize>1.5</drawSize>
+					<color>(70,63,57)</color>
+					<shaderType>CutoutComplex</shaderType>
+					<shadowData>
+						<volume>(0.2, 0.3, 0.2)</volume>
+						<offset>(0,0,0)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Bugs/XothicBloodLocust</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	
+	<!-- Locust egg -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>OG_Egg_BloodLocustG_Fertilized</defName>
+		<label>xothic blood locust egg</label>
+		<description>A fertilized blood locust egg. If all goes well, it should hatch into an insatiable blood locust. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(210,34,62)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="AdeptusMechanicus.CompProperties_HatcherHorde">
+				<hatcherDaystoHatch>.5</hatcherDaystoHatch>
+				<hatcherPawn>OG_Xenos_XothicBloodLocustG</hatcherPawn>
+				<hordePawn>OG_Xenos_XothicBloodLocustG</hordePawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
